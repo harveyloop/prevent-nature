@@ -36,3 +36,20 @@ header {
 .car-buy-container {
   justify-content: right;
 }
+.circle-count-container {
+  position: relative;
+}
+.circle-count {
+  background-color: var(--green-light);
+  color: var(--white);
+  position: absolute;
+  font-size: 0.5rem;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -5px;
+  top: -5px;
+  border-radius: 255px;
+}

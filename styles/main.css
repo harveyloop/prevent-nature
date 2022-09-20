@@ -1,6 +1,7 @@
 @import url("./section-one.css");
 @import url("./section-two.css");
 @import url("./section-three.css");
+@import url("./section-four.css");
 .grid-center {
   display: grid;
   place-items: center;
@@ -8,4 +9,3 @@
 main {
   padding-top: 177.33px;
 }
-
