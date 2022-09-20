@@ -1,14 +1,9 @@
-.grid-center {
-  display: grid;
-  place-items: center;
-}
-
 .whoami-text-container__first,
 .whoami-text-container__second {
   margin-top: 6.25rem;
   padding: 0 1rem;
 }
-.whoami-text-container__first h1 {
+.whoami-text-container__first h2 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--black);
