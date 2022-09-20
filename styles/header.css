@@ -1,0 +1,38 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  background-color: var(--white);
+}
+
+.decorator-header {
+  padding: 0.5rem;
+  background-color: var(--green-dark);
+}
+.decorator-header p {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--white);
+  letter-spacing: 0.1em;
+}
+.navegator {
+  padding: 1rem;
+  box-shadow: 0px 0px 4px 1px #00000025;
+}
+.navegator ul {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333333333333333333333333333333%);
+}
+.hamburger {
+  transform: scale(0.7);
+}
+.logo-important {
+  justify-content: center;
+}
+.logo-important img {
+  width: 6.25rem;
+}
+.car-buy-container {
+  justify-content: right;
+}

@@ -1,0 +1,37 @@
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.whoami-text-container__first,
+.whoami-text-container__second {
+  margin-top: 6.25rem;
+  padding: 0 1rem;
+}
+.whoami-text-container__first h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+.whoami-text-container__first p {
+  text-align: center;
+  line-height: 30px;
+  margin-top: 2rem;
+  color: var(--gray);
+}
+
+.whoami-text-container__second {
+  gap: 4rem;
+}
+.whoami-text-container__second-box h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 1.5rem;
+}
+.whoami-text-container__second-box p {
+  color: var(--gray);
+  text-align: center;
+  line-height: 30px;
+  max-width: 200px;
+}
