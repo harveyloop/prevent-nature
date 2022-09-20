@@ -1,3 +1,4 @@
-.responsive-image-image {
-  background-image: url("../assets/img-bg.png");
+@import url("./section-one.css");
+main {
+  padding-top: 177.33px;
 }
