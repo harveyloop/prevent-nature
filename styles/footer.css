@@ -1,0 +1,21 @@
+.all-content-center__footer {
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+  margin: 6.25rem 0;
+  padding: 0 1rem;
+}
+.all-content-center__footer p {
+  text-align: center;
+  color: var(--gray);
+  line-height: 30px;
+}
+.all-content-center__footer div {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.all-content-center__footer span {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
