@@ -91,7 +91,7 @@
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.action-item-love img,
+.action-item-love svg,
 .action-item-info-modal img {
   width: 20px;
 }
@@ -129,5 +129,13 @@
 @media (min-width: 1200px) {
   .products-info-container__second {
     max-width: 1200px;
+  }
+  .products-info-container__first,
+  .products-info-container__second,
+  .products-info-container__third {
+    margin-top: 8.25rem;
+  }
+  .products-info-container__third {
+    margin-bottom: 8.25rem;
   }
 }
