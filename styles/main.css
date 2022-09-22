@@ -10,3 +10,8 @@
 main {
   padding-top: 177.33px;
 }
+@media (min-width: 1000px) {
+  main {
+    padding-top: 106.25px;
+  }
+}

@@ -9,6 +9,7 @@
   text-align: center;
   color: var(--gray);
   line-height: 30px;
+  max-width: 200px;
 }
 .all-content-center__footer div {
   display: flex;
