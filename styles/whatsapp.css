@@ -1,0 +1,19 @@
+.button-whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.button-whatsapp button {
+  background: var(--green-whatsapp);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 255px;
+  border: none;
+}
+.button-whatsapp img {
+  width: 40px;
+}
