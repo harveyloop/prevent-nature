@@ -1,0 +1,30 @@
+.subsme-text-container {
+  background-color: var(--green-dark);
+}
+.subsme-text-container_box {
+  padding: 5rem 1rem;
+}
+.subsme-text-container_box h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: 2rem;
+}
+.subsme-text-container_box__input {
+  width: 100%;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+.subsme-text-container_box__input input {
+  width: 100%;
+  border-radius: 0.2rem;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+}
+.subsme-text-container_box__input input[type="submit"] {
+  background-color: var(--green-light);
+  color: var(--white);
+}
+.subsme-text-container_box a {
+  color: var(--white);
+}
