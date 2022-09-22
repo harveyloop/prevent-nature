@@ -10,10 +10,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 255px;
   border: none;
 }
 .button-whatsapp img {
-  width: 40px;
+  width: 30px;
 }

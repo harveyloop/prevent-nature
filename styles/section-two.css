@@ -1,3 +1,7 @@
+.whoami-text-container {
+  display: grid;
+  place-items: center;
+}
 .whoami-text-container__first,
 .whoami-text-container__second {
   margin-top: 6.25rem;
@@ -11,12 +15,17 @@
 .whoami-text-container__first p {
   text-align: center;
   line-height: 30px;
+  max-width: 600px;
   margin-top: 2rem;
   color: var(--gray);
 }
 
 .whoami-text-container__second {
   gap: 4rem;
+  grid-template-columns: repeat(auto-fill, 300px);
+  place-content: center;
+
+  width: 100%;
 }
 .whoami-text-container__second-box h3 {
   font-size: 1.4rem;
@@ -29,4 +38,11 @@
   text-align: center;
   line-height: 30px;
   max-width: 200px;
+}
+/* media */
+@media (min-width: 1200px) {
+  .whoami-text-container__second {
+    max-width: 1200px;
+    gap: 6rem;
+  }
 }

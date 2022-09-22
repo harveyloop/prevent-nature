@@ -28,3 +28,9 @@
 .subsme-text-container_box a {
   color: var(--white);
 }
+@media (min-width: 650px) {
+  .subsme-text-container_box__input {
+    max-width: 600px;
+    grid-template-columns: 70% 30%;
+  }
+}

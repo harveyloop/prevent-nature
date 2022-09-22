@@ -48,3 +48,13 @@
   justify-content: center;
   gap: 2rem;
 }
+@media (min-width: 1200px) {
+  .responsive-image-container div {
+    display: flex;
+    justify-content: center;
+  }
+  .responsive-image-container__text_box,
+  .responsive-image-container__footer_box {
+    max-width: 1200px;
+  }
+}

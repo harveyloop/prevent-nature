@@ -1,3 +1,7 @@
+.nov-text-container {
+  display: grid;
+  place-items: center;
+}
 .nov-text-container_box__first {
   padding: 0 1rem;
 }
@@ -11,6 +15,7 @@
   line-height: 30px;
   margin-top: 2rem;
   color: var(--gray);
+  max-width: 600px;
 }
 .nov-text-container_box__second_hov__content {
   background-color: var(--semi-white);
@@ -23,7 +28,9 @@
   margin: 6.25rem 0;
   padding: 0 1rem;
   width: 100%;
-  row-gap: 6rem;
+  gap: 6rem;
+  grid-template-columns: repeat(auto-fill, 300px);
+  place-content: center;
 }
 .nov-text-container_box__second_hov {
   width: 100%;
@@ -76,4 +83,10 @@
 }
 .nov-text-container_box__third a:hover::before {
   transform: scale(0, 1);
+}
+/* media */
+@media (min-width: 1200px) {
+  .nov-text-container_box__second {
+    max-width: 1200px;
+  }
 }
