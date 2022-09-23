@@ -5,7 +5,7 @@
   margin: 1rem;
 }
 
-.button-whatsapp button {
+.button-whatsapp a {
   background: var(--green-whatsapp);
   display: flex;
   justify-content: center;

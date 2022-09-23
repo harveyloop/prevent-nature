@@ -5,7 +5,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 45.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 422.0,
-    "img": ""
+    "img": "../assets/greenpild.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 244.0,
-    "img": ""
+    "img": "../assets/coffeeBlack.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 451.0,
-    "img": ""
+    "img": "../assets/althus.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 125.0,
-    "img": ""
+    "img": "../assets/revella.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 85.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 100.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 477.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 120.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 445.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 70.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   },
   {
     "id": 12,
@@ -93,6 +93,6 @@
     "description": "Una descripcion pequeña de un producto",
     "like": false,
     "price": 96.0,
-    "img": ""
+    "img": "../assets/coffee.png"
   }
 ]

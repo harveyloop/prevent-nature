@@ -30,9 +30,13 @@
 .bg-responsive-image-item {
   width: 100%;
   max-width: 300px;
+  height: 300px;
   box-shadow: 0px 6px 12px 0px #00000025;
   border-radius: 1em;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product-principal-image {
   width: 100%;
@@ -98,6 +102,7 @@
 .bg-responsive-image-item__action-user {
   position: absolute;
   right: -16px;
+  top: 0;
 }
 .products-info-container__third {
   margin-bottom: 6.25rem;
@@ -126,6 +131,18 @@
 }
 .products-info-container__second-box {
   width: 100%;
+}
+.like-active > svg > path {
+  fill: var(--green-light);
+}
+.action-item-love > svg > path {
+  transition: 0.3s;
+}
+.like-active-svg > path {
+  fill: var(--green-light);
+}
+.like-active-path {
+  fill: var(--green-light);
 }
 /* media */
 @media (min-width: 1200px) {
