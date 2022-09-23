@@ -1,0 +1,22 @@
+.menu-mobile {
+  position: fixed;
+  z-index: 1000;
+  width: 230px;
+  height: 100vh;
+  background: var(--white);
+  padding: 200px 1rem;
+  left: -100vw;
+  transition: 0.3s;
+}
+.menu-mobile > nav > ul {
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+.menu-mobile > nav > ul > li > a {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+.mobile-active {
+  left: 0;
+}
