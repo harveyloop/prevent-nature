@@ -1,5 +1,7 @@
 import actionLike from "./actionLike.js";
+import getProducts from "./getProducts.js";
 
-const d = document
-const $svg = d.getElementById()
-actionLike()
+const d = document;
+
+getProducts();
+actionLike();
