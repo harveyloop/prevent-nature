@@ -89,4 +89,10 @@
   .nov-text-container_box__second {
     max-width: 1200px;
   }
+  .nov-text-container_box__second {
+    margin: 8.25rem 0;
+  }
+  .nov-text-container_box__third {
+    margin-bottom: 8.25rem;
+  }
 }
