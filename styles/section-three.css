@@ -124,7 +124,9 @@
 .products-info-container__third a:hover::before {
   transform: scale(0, 1);
 }
-
+.products-info-container__second-box {
+  width: 100%;
+}
 /* media */
 @media (min-width: 1200px) {
   .products-info-container__second {

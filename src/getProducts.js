@@ -1,5 +1,4 @@
-const getProducts = async () => {
-  const $productsContainer = document.getElementById("productsContainer");
+const getProducts = async (father) => {
   let fragmentTemp = document.createDocumentFragment();
 
   let url = "../data/data.json";
@@ -54,7 +53,7 @@ const getProducts = async () => {
         </div>
       `;
       fragmentTemp.appendChild(divTemp);
-      $productsContainer.appendChild(fragmentTemp);
+      father.appendChild(fragmentTemp);
     });
   } catch (err) {}
 };
