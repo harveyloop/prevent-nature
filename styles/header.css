@@ -89,6 +89,12 @@ header {
   width: 100%;
   border: none;
 }
+.container-desktop-second-ul__o hr{
+  height: 100%;
+  border: none;
+  background: var(--green-dark);
+  width: 1px;
+}
 
 @media (min-width: 1000px) {
   .ham,

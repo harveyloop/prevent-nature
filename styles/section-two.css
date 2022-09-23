@@ -45,4 +45,9 @@
     max-width: 1200px;
     gap: 6rem;
   }
+  .whoami-text-container__first,
+.whoami-text-container__second {
+  margin-top: 8.25rem;
+
+}
 }

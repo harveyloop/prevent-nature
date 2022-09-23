@@ -20,3 +20,8 @@
   font-size: 0.8rem;
   color: var(--gray);
 }
+@media (min-width:1200px){
+  .all-content-center__footer {
+    margin: 8.25rem 0;
+  }
+}
