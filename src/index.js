@@ -1,16 +1,27 @@
 import actionLike from "./actionLike.js";
 import getProducts from "./getProducts.js";
+import infoModalProduct from "./infoModalProduct.js";
 import menuMobile from "./menuMobile.js";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const d = document;
 
 const $productsContainer = d.getElementById("productsContainer");
 const $menuMobile = d.getElementById("menuMobile");
 const $ham = d.getElementById("hamButton");
-
+const $nameModalProduct = d.getElementById("productModalName");
+const $imageModalProduct = d.getElementById("productModalImage");
+const $priceModalProduct = d.getElementById("productModalPrice");
+const $descriptionModalProduct = d.getElementById("productModalDescription");
+const $closeModalProduct = d.getElementById("closeModalProduct");
+const $modalProductInfo = d.getElementById("modalInfoProduct");
 getProducts($productsContainer);
 actionLike();
 menuMobile($ham, $menuMobile);
-AOS.init();
+infoModalProduct(
+  $modalProductInfo,
+  $nameModalProduct,
+  $priceModalProduct,
+  $imageModalProduct,
+  $descriptionModalProduct,
+  $closeModalProduct
+);

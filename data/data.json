@@ -1,96 +1,96 @@
 [
   {
     "id": 1,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 1",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 45.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 2,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 2",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 422.0,
     "img": "../assets/greenpild.png"
   },
   {
     "id": 3,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 3",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 244.0,
     "img": "../assets/coffeeBlack.png"
   },
   {
     "id": 4,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 4",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 451.0,
     "img": "../assets/althus.png"
   },
   {
     "id": 5,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 5",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 125.0,
     "img": "../assets/revella.png"
   },
   {
     "id": 6,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 6",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 85.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 7,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 7",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 100.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 8,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 8",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 477.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 9,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 9",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 120.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 10,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 10",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 445.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 11,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 11",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 70.0,
     "img": "../assets/coffee.png"
   },
   {
     "id": 12,
-    "name": "Café con moringa",
-    "description": "Una descripcion pequeña de un producto",
+    "name": "Producto 12",
+    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
     "like": false,
     "price": 96.0,
     "img": "../assets/coffee.png"
