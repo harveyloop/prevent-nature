@@ -23,15 +23,21 @@
   width: 100%;
   padding: 4rem 0;
   place-items: center;
+
+  overflow: auto;
 }
 .modal-info-product-just__center_modal_first {
   display: grid;
   place-items: center;
   width: 100%;
+  height: 400px;
 }
-.modal-info-product-just__center_modal_first img {
+.modal-info-product-just__center_modal_first div {
   width: 100%;
-  max-width: 380px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .test-close-modal-info-product {
   position: absolute;
@@ -72,12 +78,20 @@
 }
 @media (min-width: 720px) {
   .modal-info-product-just__center_modal {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
   }
+  .modal-info-product-just__center_modal_second,
   .modal-info-product-just__center_modal {
-    padding: 1rem 2rem;
+    padding: 0;
+  }
+  .modal-info-product-just__center_modal_first div {
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
   }
   .modal-info-product-just__center_modal_second {
-    padding: 0;
+    height: 400px;
+    overflow: auto;
   }
 }

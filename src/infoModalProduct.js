@@ -19,7 +19,10 @@ const infoModalProduct = (modal, name, price, image, description, btnclose) => {
       console.log(theProductSelect.name);
       name.textContent = theProductSelect[0].name;
       price.textContent = `S/.${theProductSelect[0].price}`;
-      image.setAttribute("src", theProductSelect[0].img);
+      image.style.setProperty(
+        "background-image",
+        `url(${theProductSelect[0].img})`
+      );
       description.textContent = theProductSelect[0].description;
     } catch (error) {}
   }
