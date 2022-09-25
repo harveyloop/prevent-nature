@@ -5,7 +5,6 @@ const getProducts = async (father) => {
   try {
     let res = await fetch(url);
     let json = await res.json();
-    json.forEach((item) => console.log(item));
     json.forEach((item) => {
       let divTemp = document.createElement("div");
       divTemp.className = "products-info-container__second-box";
@@ -30,7 +29,7 @@ const getProducts = async (father) => {
                 />
               </svg>
             </span>
-            <span class="action-item-info-modal">
+            <span class="action-item-info-modal" productIdInfo="${item.id}">
               <img src="../assets/info-item.svg" alt="información" />
             </span>
           </div>
@@ -57,6 +56,18 @@ const getProducts = async (father) => {
       fragmentTemp.appendChild(divTemp);
       father.appendChild(fragmentTemp);
     });
-  } catch (err) {}
+    let fatherForMoreProducts = father.parentNode;
+    let elementMoreProducts = document.createElement("div");
+    let elementMoreProductsChild = document.createElement("a");
+    elementMoreProductsChild.textContent = "Ver mas productos";
+    elementMoreProducts.className =
+      "products-info-container__third grid-center";
+    elementMoreProducts.appendChild(elementMoreProductsChild);
+    fatherForMoreProducts.appendChild(elementMoreProducts);
+  } catch (err) {
+    let myElementErr = document.createElement("h4");
+    myElementErr.textContent = "Lo sentimos sucedio un error";
+    father.appendChild(myElementErr);
+  }
 };
 export default getProducts;

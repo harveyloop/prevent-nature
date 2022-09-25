@@ -9,17 +9,33 @@
     <title>PREVENT NATURE</title>
   </head>
   <body>
-    <div class="modal-info-product-just__center">
-      <div class="modal-info-product-just__center_modal"></div>
+    <div
+      class="modal-info-product-just__center modal-deactivate-info"
+      id="modalInfoProduct"
+    >
+      <div class="modal-info-product-just__center_modal">
+        <button class="test-close-modal-info-product" id="closeModalProduct">
+          Cerrar modal
+        </button>
+        <div class="modal-info-product-just__center_modal_first">
+          <div id="productModalImage"></div>
+        </div>
+        <div class="modal-info-product-just__center_modal_second">
+          <h4 id="productModalName"></h4>
+          <span id="productModalPrice"></span>
+          <p id="productModalDescription"></p>
+          <button>ANADIR AL CARRITO</button>
+        </div>
+      </div>
     </div>
     <div class="menu-mobile" id="menuMobile">
       <nav>
         <ul>
-          <li><a href="">INICIO</a></li>
-          <li><a href="">PRODUCTOS</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">ACERCA DE</a></li>
-          <li><a href="">CONTACTANOS</a></li>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#productos">PRODUCTOS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#acerca">ACERCA DE</a></li>
+          <li><a href="#contactanos">CONTACTANOS</a></li>
         </ul>
       </nav>
     </div>
@@ -53,11 +69,11 @@
             </li>
             <div class="container-desktop">
               <ul class="container-desktop-ul">
-                <li><a href="">INICIO</a></li>
-                <li><a href="">PRODUCTOS</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">ACERCA DE</a></li>
-                <li><a href="">CONTACTANOS</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#acerca">ACERCA DE</a></li>
+                <li><a href="#contactanos">CONTACTANOS</a></li>
               </ul>
             </div>
           </div>
@@ -95,14 +111,10 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section id="inicio">
         <div class="responsive-image-container">
           <div class="responsive-image-container__text flex-center">
-            <span
-              class="responsive-image-container__text_box"
-              data-aos="fade-right"
-              data-aos-offset="500"
-            >
+            <span class="responsive-image-container__text_box">
               <h1>MORINGA EL ÁRBOL MILAGROSO</h1>
               <p>
                 <b>Moringa oleifera,</b>
@@ -136,8 +148,13 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="whoami-text-container">
+      <section id="acerca">
+        <div
+          class="whoami-text-container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
           <div class="whoami-text-container__first grid-center">
             <h2>¿Quienes somos?</h2>
             <p>
@@ -174,8 +191,13 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="products-info-container">
+      <section id="productos">
+        <div
+          class="products-info-container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
           <div class="products-info-container__first grid-center">
             <h2>Nuestros productos</h2>
             <p>
@@ -188,13 +210,15 @@
             class="products-info-container__second grid-center"
             id="productsContainer"
           ></div>
-          <div class="products-info-container__third grid-center">
-            <a href="">Ver mas productos</a>
-          </div>
         </div>
       </section>
-      <section>
-        <div class="nov-text-container">
+      <section id="blog">
+        <div
+          class="nov-text-container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
           <div class="nov-text-container_box__first grid-center">
             <h2>Noticias</h2>
             <p>
@@ -244,14 +268,21 @@
               </p>
             </div>
           </div>
-          <div class="nov-text-container_box__third grid-center">
+          <div
+            class="nov-text-container_box__third grid-center"
+            id="contactanos"
+          >
             <a href="">Ver mas noticias</a>
           </div>
         </div>
       </section>
       <section>
         <div class="subsme-text-container">
-          <div class="subsme-text-container_box grid-center">
+          <div
+            class="subsme-text-container_box grid-center"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
             <h2>SUSCRIBETE A LAS MEJORES OFERTAS</h2>
             <div class="subsme-text-container_box__input grid-center">
               <input type="text" placeholder="Tu email..." />
@@ -264,8 +295,13 @@
     </main>
     <footer>
       <div class="all-content-center__footer">
-        <img src="../assets/logo.svg" alt="logo" />
-        <p>Productos naturales para potenciar tu vida a precios accesibles.</p>
+        <div class="foot-special">
+          <img src="../assets/logo.svg" alt="logo" />
+          <p>
+            Productos naturales para potenciar tu vida a precios accesibles.
+          </p>
+        </div>
+
         <div class="all-content-center__footer-media">
           <li>
             <a href="">
@@ -324,6 +360,35 @@
         <img src="../assets/whatsapp.svg" alt="whatsapp" />
       </a>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1500,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../src/index.js" type="module"></script>
     <script>
