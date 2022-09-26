@@ -79,7 +79,7 @@ header {
 }
 .container-desktop-ul a:hover,
 .container-desktop-second-ul__o a:hover {
-  color: var(--gray);
+  color: var(--green-light);
 }
 .container-desktop-second-div__t {
   width: 100%;

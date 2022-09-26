@@ -6,6 +6,7 @@ const getProducts = async (father) => {
     let res = await fetch(url);
     let json = await res.json();
     json.forEach((item) => {
+      let convertNumber = parseFloat(item.price).toFixed(2);
       let divTemp = document.createElement("div");
       divTemp.className = "products-info-container__second-box";
       divTemp.innerHTML = `
@@ -30,8 +31,11 @@ const getProducts = async (father) => {
               </svg>
             </span>
             <span class="action-item-info-modal" productIdInfo="${item.id}">
-              <img src="../assets/info-item.svg" alt="información" />
+              <img src="../assets/info-item.svg" alt="información" class="action47adcbu45"  productIdInfo="${item.id}"/>
             </span>
+          </div>
+          <div class="hov-detail-bg-responsive-image-item">
+            <a>VER DETALLE</a>
           </div>
           <img
             class="product-principal-image"
@@ -41,7 +45,7 @@ const getProducts = async (father) => {
         </div>
         <div class="reponsive-info-item">
           <h4 class="name-product">${item.name}</h4>
-          <p>S/ ${item.price}</p>
+          <p>S/ ${convertNumber}</p>
           <button class="responsive-info-item-button">
             <span class="responsive-info-item-button__text">
               CONSULTAR POR WHATSAPP
@@ -66,8 +70,15 @@ const getProducts = async (father) => {
     fatherForMoreProducts.appendChild(elementMoreProducts);
   } catch (err) {
     let myElementErr = document.createElement("h4");
+    let mySecondElementErr = document.createElement("h3");
+    let myThirdElementErr = document.createElement("div");
+    myThirdElementErr.className = "err-product-load";
+    mySecondElementErr.textContent = ":(";
     myElementErr.textContent = "Lo sentimos sucedio un error";
-    father.appendChild(myElementErr);
+    myThirdElementErr.appendChild(mySecondElementErr);
+    myThirdElementErr.appendChild(myElementErr);
+    fragmentTemp.appendChild(myThirdElementErr);
+    father.parentNode.appendChild(fragmentTemp);
   }
 };
 export default getProducts;

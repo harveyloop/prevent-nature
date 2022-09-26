@@ -2,8 +2,6 @@ const actionLike = () => {
   let dbLike = [];
   document.addEventListener("click", likeProduct);
   function likeProduct(e) {
-    console.log(e.target.tagName);
-    console.log(e.target.className.baseVal);
     if (
       e.target.className === "action-item-love" ||
       e.target.className === "action-item-love like-active"
