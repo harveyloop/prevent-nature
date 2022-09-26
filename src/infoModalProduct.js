@@ -1,8 +1,9 @@
 const infoModalProduct = (modal, name, price, image, description, btnclose) => {
   document.addEventListener("click", (e) => {
     if (
-      e.target.className == "action-item-info-modal" &&
-      e.target.tagName == "SPAN"
+      (e.target.className === "action-item-info-modal" &&
+        e.target.tagName === "SPAN") ||
+      (e.target.tagName === "IMG" && e.target.className === "action47adcbu45")
     ) {
       let idForSearch = parseInt(e.target.getAttribute("productIdInfo"));
       getProductForId(idForSearch);
