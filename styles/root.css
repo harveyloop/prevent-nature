@@ -19,6 +19,9 @@
   box-sizing: border-box;
   font-family: var(--family-one);
 }
+.noScroll {
+  overflow: hidden;
+}
 html {
   overflow-x: hidden;
 }

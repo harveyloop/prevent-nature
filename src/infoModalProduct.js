@@ -8,6 +8,7 @@ const infoModalProduct = (modal, name, price, image, description, btnclose) => {
       let idForSearch = parseInt(e.target.getAttribute("productIdInfo"));
       getProductForId(idForSearch);
       modal.classList.toggle("modal-deactivate-info");
+      document.querySelector("html").classList.toggle("noScroll")
     }
   });
   async function getProductForId(id) {
@@ -25,10 +26,13 @@ const infoModalProduct = (modal, name, price, image, description, btnclose) => {
         `url(${theProductSelect[0].img})`
       );
       description.textContent = theProductSelect[0].description;
-    } catch (error) {}
+    } catch (error) {
+      // no forget the error
+    }
   }
   btnclose.addEventListener("click", (e) => {
     modal.classList.toggle("modal-deactivate-info");
+    document.querySelector("html").classList.toggle("noScroll")
   });
 };
 export default infoModalProduct;
