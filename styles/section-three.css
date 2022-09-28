@@ -157,8 +157,7 @@
   opacity: 0.5;
 }
 .bg-responsive-image-item:hover .product-principal-image {
-  scale: 0.8;
-  rotate: -4deg;
+  scale: 1.05;
 }
 .hov-detail-bg-responsive-image-item {
   position: absolute;
