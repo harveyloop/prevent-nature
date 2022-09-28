@@ -1,0 +1,137 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  background-color: var(--white);
+}
+.decorator-header {
+  padding: 0.5rem;
+  background-color: var(--green-dark);
+}
+.decorator-header p {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--white);
+  letter-spacing: 0.1em;
+}
+.navegator {
+  padding: 1rem;
+  box-shadow: 0px 0px 4px 1px #00000025;
+}
+.first-ul__78adbcqd174 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 33.333333333333333333333333333333%);
+}
+.hamburger {
+  transform: scale(0.7);
+}
+.logo-important {
+  justify-content: center;
+}
+.logo-important img {
+  width: 6.25rem;
+}
+.car-buy-container {
+  justify-content: right;
+}
+.circle-count-container {
+  position: relative;
+}
+
+.circle-count {
+  background-color: var(--green-light);
+  color: var(--white);
+  position: absolute;
+  font-size: 0.5rem;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -5px;
+  top: -5px;
+  border-radius: 255px;
+}
+
+.container-desktop-second,
+.container-desktop {
+  display: none;
+}
+
+.container-desktop-ul {
+  gap: 2rem;
+}
+.container-desktop-second {
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  justify-content: space-between;
+}
+.container-desktop-ul a,
+.container-desktop-second-ul__o a {
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container-desktop-ul a:hover,
+.container-desktop-second-ul__o a:hover {
+  color: var(--green-light);
+}
+.container-desktop-second-div__t {
+  width: 100%;
+  position: relative;
+  padding: 0.5rem;
+  border: 1px solid var(--green-dark);
+  border-radius: 0.2rem;
+  display: flex;
+  gap: 1rem;
+}
+.container-desktop-second-div__t input {
+  background: transparent;
+  width: 100%;
+  border: none;
+}
+.container-desktop-second-ul__o hr {
+  height: 100%;
+  border: none;
+  background: var(--green-dark);
+  width: 1px;
+}
+
+@media (min-width: 1000px) {
+  .ham,
+  .car-buy-container,
+  .decorator-header {
+    display: none;
+  }
+  .logo-important img {
+    width: 4rem;
+  }
+  .navegator {
+    display: flex;
+    justify-content: center;
+  }
+  .first-ul__78adbcqd174 {
+    display: flex;
+    gap: 3rem;
+  }
+  .navegator ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .container-desktop-second,
+  .container-desktop {
+    display: flex;
+    align-items: center;
+  }
+  .container-desktop {
+    justify-content: center;
+  }
+}

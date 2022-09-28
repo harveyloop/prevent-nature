@@ -1,17 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>PREVENT NATURE</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  </head>
+  <body>
+    <div class="modal-info-wish-list-center" id="modalProductWish">
+      <div class="modal-info-wish-list">
+        <div class="modal-info-wish-nav">
+          <h3>MI LISTA DE DESEOS</h3>
+          <button id="closeOpenModalWish">Cerrar modal</button>
+        </div>
+        <div class="modal-info-wish-main" id="modalWishContent"></div>
+      </div>
+    </div>
+    <div
+      class="modal-info-product-just__center modal-deactivate-info"
+      id="modalInfoProduct"
+    >
+      <div class="modal-info-product-just__center_modal">
+        <img
+          class="test-close-modal-info-product"
+          id="closeModalProduct"
+          src="../assets/close-modal.svg"
+        />
 
+        <div class="modal-info-product-just__center_modal_first">
+          <div id="productModalImage"></div>
+        </div>
+        <div class="modal-info-product-just__center_modal_second">
+          <h4 id="productModalName"></h4>
+          <span id="productModalPrice"></span>
+          <p id="productModalDescription"></p>
+          <button>ANADIR AL CARRITO</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="menuMobile">
+      <nav>
+        <ul>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#productos">PRODUCTOS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#acerca">ACERCA DE</a></li>
+          <li><a href="#contactanos">CONTACTANOS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="decorator-header">
+        <p>CALLE AGUA 844, HUANCAYO | +51 967 523 180</p>
+      </div>
+      <nav class="navegator">
+        <ul class="flex-center">
+          <div class="first-ul__78adbcqd174">
+            <li class="ham flex-center">
+              <button
+                class="hamburger hamburger--collapse"
+                type="button"
+                id="hamButton"
+              >
+                <!--is-active , add class-->
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </li>
+            <li class="logo-important flex-center">
+              <a href=""><img src="../assets/logo.svg" alt="logo" /></a>
+            </li>
+            <li class="car-buy-container flex-center">
+              <span class="circle-count-container">
+                <span class="circle-count"> 0 </span>
+                <img src="../assets/car-green.svg" alt="carrito de compras" />
+              </span>
+            </li>
+            <div class="container-desktop">
+              <ul class="container-desktop-ul">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#acerca">ACERCA DE</a></li>
+                <li><a href="#contactanos">CONTACTANOS</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-desktop-second">
+            <ul class="container-desktop-second-ul__o">
+              <li><a href="">+967 523 180</a></li>
+              <hr />
+              <li><a href="">INGRESAR</a></li>
+              <hr />
+              <li>
+                <a href="" id="buttonOpenModalWish">CARRO</a>
+              </li>
+            </ul>
+            <div class="container-desktop-second-div__t">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 8 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.73415 5.18879L5.6078 5.35038H5.81293H6.06763C6.14148 5.35038 6.21126 5.37917 6.26257 5.43048L7.82011 6.98803C7.82017 6.98808 7.82022 6.98814 7.82028 6.98819C7.92683 7.09606 7.92677 7.27043 7.81893 7.37827L7.37671 7.82049L7.37633 7.82087C7.27035 7.92799 7.09645 7.92854 6.9884 7.82049L5.43048 6.26257C5.37917 6.21126 5.35038 6.14148 5.35038 6.06763V5.81293V5.6078L5.18879 5.73415C4.65419 6.15213 3.98193 6.40048 3.25024 6.40048C1.51002 6.40048 0.1 4.99045 0.1 3.25024C0.1 1.51002 1.51002 0.1 3.25024 0.1C4.99045 0.1 6.40048 1.51002 6.40048 3.25024C6.40048 3.98193 6.15213 4.65419 5.73415 5.18879ZM1.15009 3.25024C1.15009 4.41185 2.09029 5.35038 3.25024 5.35038C4.41185 5.35038 5.35038 4.41018 5.35038 3.25024C5.35038 2.08863 4.41018 1.15009 3.25024 1.15009C2.08863 1.15009 1.15009 2.09029 1.15009 3.25024Z"
+                  fill="#4e704f"
+                  stroke="white"
+                  stroke-width="0.2"
+                />
+              </svg>
+
+              <input type="text" placeholder="Buscar algun producto" />
+            </div>
+            <span></span>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <div class="responsive-image-container">
+          <div class="responsive-image-container__text flex-center">
+            <span class="responsive-image-container__text_box">
+              <h1>MORINGA EL ÁRBOL MILAGROSO</h1>
+              <p>
+                <b>Moringa oleifera,</b>
+                como como el árbol milagroso, o el árbol de la vida, es un árbol
+                abundante en Perú.
+              </p>
+            </span>
+          </div>
+          <div class="responsive-image-container__gradient"></div>
+          <div class="responsive-image-image"></div>
+          <div class="responsive-image-container__footer flex-center">
+            <span class="responsive-image-container__footer_box">
+              <ul class="flex-center">
+                <li>
+                  <a href=""
+                    ><img src="../assets/facebook.svg" alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="../assets/twitter.svg" alt="Twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="../assets/instagram.svg" alt="Instagram"
+                  /></a>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="acerca">
+        <div
+          class="whoami-text-container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
+          <div class="whoami-text-container__first grid-center">
+            <h2>¿Quienes somos?</h2>
+            <p>
+              Somos una tienda online que tiene como objetivo llevar los
+              beneficios de los producto naturales que ofrece el Perú.
+              Superalimentos con muchos beneficios para la salud y el bienestar
+              de las personas
+            </p>
+          </div>
+          <div class="whoami-text-container__second grid-center">
+            <div class="whoami-text-container__second-box grid-center">
+              <img src="../assets/heart-green.svg" alt="vida" />
+              <h3>Mayor rendimiento</h3>
+              <p>
+                Notaras una increíble energía, así aumentado tu rendimiento.
+              </p>
+            </div>
+            <div class="whoami-text-container__second-box grid-center">
+              <img src="../assets/status-green.svg" alt="vida" />
+              <h3>Precios justos</h3>
+              <p>
+                Los productos con moringa pueden prevenir más de 100
+                enfermedades.
+              </p>
+            </div>
+            <div class="whoami-text-container__second-box grid-center">
+              <img src="../assets/pig-green.svg" alt="vida" />
+              <h3>Previene enfermedades</h3>
+              <p>
+                Los productos con moringa pueden prevenir más de 100
+                enfermedades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="productos">
+        <div
+          class="products-info-container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
+          <div class="products-info-container__first grid-center">
+            <h2>Nuestros productos</h2>
+            <p>
+              Encuentros los productos saludables que buscabas al mejor precio,
+              ademas tenemos una gran variedd de porductos orgánicos, saludables
+              y libres de gluten.
+            </p>
+          </div>
+          <div
+            class="products-info-container__second grid-center"
+            id="productsContainer"
+          ></div>
+        </div>
+      </section>
+      <section id="blog">
+        <div
+          class="nov-text-container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
+          <div class="nov-text-container_box__first grid-center">
+            <h2>Noticias</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+              voluptatibus reiciendis dolore maiores odit est eveniet sapiente
+              voluptate!
+            </p>
+          </div>
+          <div class="nov-text-container_box__second grid-center">
+            <div class="nov-text-container_box__second_hov__content">
+              <div class="nov-text-container_box__second_hov">
+                <img src="../assets/ejm1.png" alt="noticia" />
+                <span>22 de abril, 2022</span>
+              </div>
+              <h3>Moringa en tus platos favoritos</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                vel quae aspernatur reprehenderit quaerat saepe a corrupti nisi?
+                Magnam ab et quibusdam perspiciatis sapiente nam corporis
+                assumenda doloribus ut omnis.
+              </p>
+            </div>
+            <div class="nov-text-container_box__second_hov__content">
+              <div class="nov-text-container_box__second_hov">
+                <img src="../assets/ejm2.jpg" alt="noticia" />
+                <span>22 de abril, 2022</span>
+              </div>
+              <h3>Eleva tu rendimiento en los deportes con moringa</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                vel quae aspernatur reprehenderit quaerat saepe a corrupti nisi?
+                Magnam ab et quibusdam perspiciatis sapiente nam corporis
+                assumenda doloribus ut omnis.
+              </p>
+            </div>
+            <div class="nov-text-container_box__second_hov__content">
+              <div class="nov-text-container_box__second_hov">
+                <img src="../assets/ejm3.png" alt="noticia" />
+                <span>22 de abril, 2022</span>
+              </div>
+              <h3>Todos los beneficios tras consumir moringa</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                vel quae aspernatur reprehenderit quaerat saepe a corrupti nisi?
+                Magnam ab et quibusdam perspiciatis sapiente nam corporis
+                assumenda doloribus ut omnis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="nov-text-container_box__third grid-center"
+            id="contactanos"
+          >
+            <a href="">Ver mas noticias</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="subsme-text-container">
+          <div class="subsme-text-container_box grid-center">
+            <h2>SUSCRIBETE A LAS MEJORES OFERTAS</h2>
+            <div class="subsme-text-container_box__input grid-center">
+              <input type="text" placeholder="Tu email..." />
+              <input type="submit" value="Suscribirse" />
+            </div>
+            <a href="">Aceptar terminos y condiciones de privacidad </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="all-content-center__footer">
+        <div class="foot-special">
+          <img src="../assets/logo.svg" alt="logo" />
+          <p>
+            Productos naturales para potenciar tu vida a precios accesibles.
+          </p>
+        </div>
+
+        <div class="all-content-center__footer-media">
+          <li>
+            <a href="">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.2188 12.1094C24.2188 5.41992 18.7988 0 12.1094 0C5.41992 0 0 5.41992 0 12.1094C0 18.1533 4.42822 23.1631 10.2173 24.0723V15.6099H7.14111V12.1094H10.2173V9.44141C10.2173 6.40674 12.0239 4.73047 14.791 4.73047C16.1162 4.73047 17.502 4.9668 17.502 4.9668V7.94531H15.9746C14.4707 7.94531 14.0015 8.87891 14.0015 9.83643V12.1094H17.3599L16.8228 15.6099H14.0015V24.0723C19.7905 23.1631 24.2188 18.1533 24.2188 12.1094Z"
+                  fill="#4e704f"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                width="25"
+                height="21"
+                viewBox="0 0 25 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.4302 5.06025C22.446 5.28232 22.446 5.50444 22.446 5.72651C22.446 12.5 17.2906 20.3045 7.86802 20.3045C4.96509 20.3045 2.26841 19.4638 0 18.0044C0.412451 18.052 0.808984 18.0679 1.2373 18.0679C3.63257 18.0679 5.83755 17.2589 7.59834 15.8788C5.3458 15.8312 3.45811 14.356 2.80771 12.3255C3.125 12.373 3.44224 12.4048 3.77539 12.4048C4.2354 12.4048 4.69546 12.3413 5.12373 12.2303C2.77603 11.7544 1.01519 9.69224 1.01519 7.20176V7.13833C1.69727 7.51904 2.49048 7.75698 3.33115 7.78867C1.95107 6.8686 1.04692 5.29819 1.04692 3.52153C1.04692 2.56978 1.30068 1.69731 1.74487 0.935889C4.26709 4.04502 8.05835 6.07544 12.3096 6.29756C12.2303 5.91685 12.1827 5.52031 12.1827 5.12373C12.1827 2.3001 14.4669 0 17.3064 0C18.7816 0 20.1141 0.618652 21.05 1.61802C22.208 1.39595 23.3184 0.967627 24.302 0.380713C23.9212 1.57046 23.1122 2.56982 22.0494 3.2043C23.0805 3.09331 24.0799 2.80771 24.9999 2.41118C24.3021 3.42637 23.4295 4.33052 22.4302 5.06025V5.06025Z"
+                  fill="#4e704f"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.946 5.33081C7.84058 5.33081 5.33569 7.83569 5.33569 10.9412C5.33569 14.0466 7.84058 16.5515 10.946 16.5515C14.0515 16.5515 16.5564 14.0466 16.5564 10.9412C16.5564 7.83569 14.0515 5.33081 10.946 5.33081ZM10.946 14.5886C8.93921 14.5886 7.29858 12.9529 7.29858 10.9412C7.29858 8.92944 8.93433 7.2937 10.946 7.2937C12.9578 7.2937 14.5935 8.92944 14.5935 10.9412C14.5935 12.9529 12.9529 14.5886 10.946 14.5886V14.5886ZM18.0945 5.10132C18.0945 5.82886 17.5085 6.40991 16.7859 6.40991C16.0584 6.40991 15.4773 5.82397 15.4773 5.10132C15.4773 4.37866 16.0632 3.79272 16.7859 3.79272C17.5085 3.79272 18.0945 4.37866 18.0945 5.10132ZM21.8103 6.42944C21.7273 4.67651 21.3269 3.12378 20.0427 1.84448C18.7634 0.565185 17.2107 0.164795 15.4578 0.0769043C13.6511 -0.0256348 8.23608 -0.0256348 6.42944 0.0769043C4.6814 0.159912 3.12866 0.560303 1.84448 1.8396C0.560303 3.1189 0.164795 4.67163 0.0769043 6.42456C-0.0256348 8.2312 -0.0256348 13.6462 0.0769043 15.4529C0.159912 17.2058 0.560303 18.7585 1.84448 20.0378C3.12866 21.3171 4.67651 21.7175 6.42944 21.8054C8.23608 21.908 13.6511 21.908 15.4578 21.8054C17.2107 21.7224 18.7634 21.322 20.0427 20.0378C21.322 18.7585 21.7224 17.2058 21.8103 15.4529C21.9128 13.6462 21.9128 8.23608 21.8103 6.42944V6.42944ZM19.4763 17.3914C19.0955 18.3484 18.3582 19.0857 17.3962 19.4714C15.9558 20.0427 12.5378 19.9109 10.946 19.9109C9.35425 19.9109 5.9314 20.0378 4.49585 19.4714C3.53882 19.0906 2.80151 18.3533 2.41577 17.3914C1.84448 15.9509 1.97632 12.533 1.97632 10.9412C1.97632 9.34937 1.84937 5.92651 2.41577 4.49097C2.79663 3.53394 3.53394 2.79663 4.49585 2.41089C5.93628 1.8396 9.35425 1.97144 10.946 1.97144C12.5378 1.97144 15.9607 1.84448 17.3962 2.41089C18.3533 2.79175 19.0906 3.52905 19.4763 4.49097C20.0476 5.9314 19.9158 9.34937 19.9158 10.9412C19.9158 12.533 20.0476 15.9558 19.4763 17.3914Z"
+                  fill="#4e704f"
+                />
+              </svg>
+            </a>
+          </li>
+        </div>
+        <span class="copy__footer"> © 2022 Prevent Natura. </span>
+      </div>
+    </footer>
+    <div class="button-whatsapp">
+      <a href="https://wa.me/927017135/?text=Hola">
+        <img src="../assets/whatsapp.svg" alt="whatsapp" />
+      </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1500,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../src/index.js" type="module"></script>
-</body>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

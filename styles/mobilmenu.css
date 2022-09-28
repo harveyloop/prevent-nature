@@ -1,0 +1,24 @@
+.menu-mobile {
+  position: fixed;
+  z-index: 1000;
+  width: 230px;
+  height: 100vh;
+  background: var(--white-chill);
+  padding: 200px 1rem;
+  left: -100vw;
+  transition: 0.3s;
+  box-shadow: 3px 34px 5px 1px #00000025;
+  overflow: auto;
+}
+.menu-mobile > nav > ul {
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+.menu-mobile > nav > ul > li > a {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+.mobile-active {
+  left: 0;
+}

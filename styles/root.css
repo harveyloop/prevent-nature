@@ -1,5 +1,43 @@
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --family-one: "Lato", sans-serif;
+  --green-dark: #4e704f;
+  --green-med-dark: #368839;
+  --green-light: #84bd86;
+  --white: #ffffff;
+  --black: #434343;
+  --gray: #8b8b8b;
+  --semi-white: #fdfdfd;
+  --green-whatsapp: #49c958;
+  --white-chill: #f2f2f2;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--family-one);
+}
+.noScroll {
+  overflow: hidden;
+}
+html {
+  overflow-x: hidden;
+}
+a,
+button,
+input {
+  text-decoration: none;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
 }
