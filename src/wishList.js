@@ -1,4 +1,4 @@
-const wishList = (open, close, modal, fatherCopy) => {
+const wishList = (open, close, modal, fatherCopy, errorJus) => {
   document.addEventListener("click", (e) => {
     e.preventDefault();
     let tempVarFat = fatherCopy.parentNode;
@@ -22,10 +22,15 @@ const wishList = (open, close, modal, fatherCopy) => {
       let allDataConvertTwo =
         JSON.parse(localStorage.getItem("likeProduct")) || [];
       fatherCopy.innerHTML = ` `;
-      allDataConvertTwo.forEach((item) => {
-        let idTrue = parseInt(item.id);
-        getProductForId(idTrue);
-      });
+
+      if (allDataConvertTwo.length === 0) {
+        elementZero();
+      } else {
+        allDataConvertTwo.forEach((item) => {
+          let idTrue = parseInt(item.id);
+          getProductForId(idTrue);
+        });
+      }
     }
   });
 
@@ -38,10 +43,14 @@ const wishList = (open, close, modal, fatherCopy) => {
     toggleModal(e);
     fatherCopy.innerHTML = ` `;
     let allData = JSON.parse(localStorage.getItem("likeProduct")) || [];
-    allData.forEach((item) => {
-      let idTrue = parseInt(item.id);
-      getProductForId(idTrue);
-    });
+    if (allData.length === 0) {
+      elementZero();
+    } else {
+      allData.forEach((item) => {
+        let idTrue = parseInt(item.id);
+        getProductForId(idTrue);
+      });
+    }
   }
   async function getProductForId(id) {
     let url = "../data/data.json";
@@ -75,9 +84,34 @@ const wishList = (open, close, modal, fatherCopy) => {
         `;
       $fragment.appendChild(myProductWish);
       fatherCopy.appendChild($fragment);
-    } catch (error) {
-      console.log("Error");
+    } catch (err) {
+      console.log(errorJus);
+      errorJus.className = "error-wish-list active-error-wish-list";
+      setTimeout(() => (errorJus.className = "error-wish-list"), 5000);
     }
+  }
+  function elementZero() {
+    const $fragment = document.createDocumentFragment();
+
+    let divContentNone = document.createElement("div");
+    let theSvg = document.createElement("div");
+    let title = document.createElement("h5");
+    let message = document.createElement("p");
+    divContentNone.className = "contentForListNone";
+    theSvg.innerHTML = `
+    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M23.4004 13.301C19.3008 17.9451 15.1728 22.043 14.4003 22.8011C13.6277 23.5591 13.1644 23.5964 12.4003 22.8011L2.90028 12.801C2.90028 12.801 -0.599723 8.30098 1.90028 4.30108C4.40028 0.301177 7.40016 1.30118 9.40028 1.80108C11.4004 2.30098 13.9003 4.30108 13.9003 4.30108C16.9163 0.524387 19.3006 0.445309 22.4003 1.80108C25.5 3.15685 27.5 8.65686 23.4004 13.301Z" fill="white" stroke="#84BD86" stroke-width="2"/>
+    </svg>
+    `;
+
+    title.textContent = "Tu Lista de Deseos esta vacía. ";
+    message.textContent =
+      "Aún no tienes ningún producto en la lista de deseos. Encontrará muchos productos interesantes en nuestra página Tienda";
+    divContentNone.appendChild(theSvg);
+    divContentNone.appendChild(title);
+    divContentNone.appendChild(message);
+    $fragment.appendChild(divContentNone);
+    fatherCopy.appendChild($fragment);
   }
 };
 export default wishList;
