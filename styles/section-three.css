@@ -155,9 +155,13 @@
 }
 .bg-responsive-image-item:hover .hov-detail-bg-responsive-image-item {
   opacity: 0.5;
+  transition: 0.3s;
+}
+.bg-responsive-image-item:hover .hov-detail-bg-responsive-image-item:hover {
+  opacity: 1;
 }
 .bg-responsive-image-item:hover .product-principal-image {
-  scale: 1.05;
+  scale: 0.9;
 }
 .hov-detail-bg-responsive-image-item {
   position: absolute;
