@@ -44,18 +44,19 @@
 }
 .reponsive-info-item h4 {
   text-align: center;
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 1rem 0;
   color: var(--black);
+  font-size: 1rem;
 }
 .reponsive-info-item p {
   color: var(--green-dark);
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 800;
   text-align: center;
 }
 .responsive-info-item-button {
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   background-color: var(--green-light);
   border: none;
   align-items: center;
