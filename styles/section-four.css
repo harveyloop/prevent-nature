@@ -23,6 +23,7 @@
   max-width: 400px;
   border-radius: 0.3rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
 }
 .nov-text-container_box__second {
   margin: 6.25rem 0;
@@ -42,20 +43,25 @@
   margin-top: 1rem 0;
   color: var(--gray);
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   padding: 0 1rem;
 }
 .nov-text-container_box__second_hov__content h3 {
   color: var(--black);
   font-weight: 700;
   margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.nov-text-container_box__second_hov__content h3:hover {
+  color: var(--green-dark);
 }
 .nov-text-container_box__second_hov__content p {
   color: var(--gray);
-  line-height: 30px;
-  font-size: 1rem;
+  line-height: 25px;
+  font-size: 0.8rem;
   padding: 0 1rem 2rem 1rem;
 }
 .nov-text-container_box__third {
@@ -83,6 +89,19 @@
 }
 .nov-text-container_box__third a:hover::before {
   transform: scale(0, 1);
+}
+.actionidjust04 {
+  overflow: hidden;
+}
+.actionidjust04 img {
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.nov-text-container_box__second_hov__content:hover img {
+  scale: 1.1;
+}
+.nov-text-container_box__second_hov__content:hover {
+  scale: 1.025;
 }
 /* media */
 @media (min-width: 1200px) {

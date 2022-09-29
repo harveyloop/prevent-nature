@@ -1,0 +1,31 @@
+.modal-mobile-items-for-change {
+  position: fixed;
+  bottom: 0;
+  z-index: 5000;
+  width: 100%;
+  background-color: var(--white);
+}
+.modal-mobile-item-for-change__view_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.modal-mobile-item-for-change__view_items p {
+  font-size: 0.7rem;
+  color: var(--black);
+  font-weight: 700;
+}
+.modal-mobile-item-for-change__view_items a {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 0.4rem;
+}
+.modal-mobile-item-for-change__view_items img {
+  width: 18px;
+}
+@media (min-width: 1000px) {
+  .modal-mobile-items-for-change {
+    display: none;
+  }
+}

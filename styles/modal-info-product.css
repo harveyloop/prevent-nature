@@ -21,7 +21,7 @@
   position: relative;
   background: var(--white);
   border-radius: 0.3rem;
-  max-width: 720px;
+  max-width: 900px;
   width: 100%;
   height: 100%;
   place-items: center;
@@ -32,7 +32,7 @@
   display: grid;
   place-items: center;
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 .modal-info-product-just__center_modal_first div {
   width: 100%;
@@ -85,7 +85,7 @@
 @media (min-width: 720px) {
   .modal-info-product-just__center_modal {
     grid-template-columns: 50% 50%;
-    height: 350px;
+    height: 400px;
   }
   .modal-info-product-just__center_modal_second,
   .modal-info-product-just__center_modal {
@@ -98,14 +98,14 @@
     background-position: center;
   }
   .modal-info-product-just__center_modal_second {
-    height: 350px;
+    height: 400px;
     overflow: auto;
   }
   .modal-info-product-just__center_modal_second h4 {
-    margin: 2rem 2rem 0.5rem 1rem;
+    margin: 2rem 4rem 0.5rem 1rem;
   }
   .modal-info-product-just__center_modal_second p {
-    margin: 1rem 2rem 1rem 1rem;
+    margin: 1rem 4rem 1rem 1rem;
   }
   .modal-info-product-just__center_modal_second span {
     margin: 0 1rem;

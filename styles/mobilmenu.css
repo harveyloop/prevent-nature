@@ -3,7 +3,7 @@
   z-index: 1000;
   width: 230px;
   height: 100vh;
-  background: var(--white-chill);
+  background: var(--white);
   padding: 200px 1rem;
   left: -100vw;
   transition: 0.3s;
