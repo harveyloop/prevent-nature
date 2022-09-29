@@ -22,6 +22,7 @@ const $buttonOpenModalWish = d.getElementById("buttonOpenModalWish");
 const $closeOpenModalWish = d.getElementById("closeOpenModalWish");
 const $modalProductWish = d.getElementById("modalProductWish");
 const $fatherModalWish = d.getElementById("modalWishContent");
+const $erroWishList = d.getElementById("erroWishList");
 
 getProducts($productsContainer);
 actionLike();
@@ -38,5 +39,6 @@ wishList(
   $buttonOpenModalWish,
   $closeOpenModalWish,
   $modalProductWish,
-  $fatherModalWish
+  $fatherModalWish,
+  $erroWishList
 );
