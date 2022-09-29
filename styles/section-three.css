@@ -70,7 +70,9 @@
 .responsive-info-item-button__text {
   color: var(--white);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  padding: 0 0 0 1em;
 }
 .responsive-info-item-button hr {
   rotate: 180deg;

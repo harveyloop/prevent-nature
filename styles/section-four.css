@@ -84,6 +84,16 @@
 .nov-text-container_box__third a:hover::before {
   transform: scale(0, 1);
 }
+.actionidjust04 {
+  overflow: hidden;
+}
+.actionidjust04 img {
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.nov-text-container_box__second_hov__content:hover img {
+  scale: 1.3;
+}
 /* media */
 @media (min-width: 1200px) {
   .nov-text-container_box__second {
