@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 1rem;
+  margin: 4rem 1rem;
 }
 
 .button-whatsapp a {
@@ -16,4 +16,9 @@
 }
 .button-whatsapp img {
   width: 30px;
+}
+@media (min-width: 1000px) {
+  .button-whatsapp {
+    margin: 1rem;
+  }
 }

@@ -40,6 +40,9 @@
   border-bottom: 1px solid var(--gray);
   padding: 1rem;
 }
+.modal-info-wish-nav img {
+  cursor: pointer;
+}
 .modal-info-wish-nav h3 {
   color: var(--black);
 }
@@ -72,10 +75,10 @@
   cursor: pointer;
 }
 .modal-info-wish-main {
-  display: grid;
-  place-items: center;
+  display: flex;
   gap: 1rem;
   height: 90%;
+  flex-direction: column;
 }
 .error-wish-list {
   background-color: #e66666;
@@ -98,7 +101,6 @@
 }
 .contentForListNone div {
   text-align: center;
-  padding-bottom: 2rem;
 }
 .contentForListNone h5 {
   font-size: 0.9rem;
@@ -111,4 +113,12 @@
   color: var(--gray);
   padding: 0.5rem 1rem;
   text-align: center;
+}
+.contentForListNone {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  justify-content: center;
 }
