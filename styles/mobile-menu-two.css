@@ -15,7 +15,7 @@
   color: var(--black);
   font-weight: 700;
 }
-.modal-mobile-item-for-change__view_items a {
+.modal-mobile-item-for-change__view_items p {
   display: grid;
   place-content: center;
   place-items: center;

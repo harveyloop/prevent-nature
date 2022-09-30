@@ -81,7 +81,7 @@
   flex-direction: column;
 }
 .error-wish-list {
-  background-color: #e66666;
+  background-color: var(--error);
   color: var(--white);
   font-style: italic;
   font-size: 0.7rem;
