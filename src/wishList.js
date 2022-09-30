@@ -1,12 +1,14 @@
 const wishList = (open, close, modal, fatherCopy, errorJus) => {
-  document.addEventListener("click", (e) => {
+  open.addEventListener("click", (e) => {
     e.preventDefault();
+    openModalAndGetData();
+  });
+  close.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleModal();
+  });
+  document.addEventListener("click", (e) => {
     let tempVarFat = fatherCopy.parentNode;
-    if (e.target === open) {
-      openModalAndGetData();
-    } else if (e.target === close) {
-      toggleModal();
-    }
 
     if (e.target === tempVarFat.parentNode) {
       modal.classList.toggle("wish-active-modal-js");
