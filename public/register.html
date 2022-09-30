@@ -172,10 +172,16 @@
       <section class="center-all-login-content">
         <div class="center-all-login">
           <form action="" class="center-all-login__form">
-            <h3>INGRESAR</h3>
-            <label for="emailforuser"
-              >Correo electronico</label
-            >
+            <h3>REGISTRARSE</h3>
+            <label for="username">Nombre de usuario</label>
+            <input
+              name="username"
+              id="username"
+              type="text"
+              maxlength="25"
+              required
+            />
+            <label for="emailforuser">Correo electronico</label>
             <input name="emailuname" id="emailforuser" type="email" required />
             <span id="viewErrorEmail" class="errorFormLog"></span>
             <div class="content-view-pass">
@@ -186,11 +192,11 @@
                 alt="ver contraseña"
                 class="view-pass__button"
               />
+
             </div>
             <span id="viewErrorPassword"  class="errorFormLog passJust05"></span>
-            <input type="submit" value="ACCEDER" />
-            <a href="./register.html" class="registerforuser">REGISTRARSE</a>
-            <a class="forgetpass" href="">¿Olvidaste tu contraseña?</a>
+            <input type="submit" value="REGISTRARSE" />
+            <a class="forgetpass" href="./login.html">¿Ya tienes una cuenta?</a>
           </form>
         </div>
       </section>
