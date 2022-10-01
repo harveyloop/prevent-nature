@@ -107,8 +107,7 @@ header {
 
 @media (min-width: 1000px) {
   .ham,
-  .car-buy-container,
-  .decorator-header {
+  .car-buy-container {
     display: none;
   }
   .logo-important img {
