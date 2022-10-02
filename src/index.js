@@ -1,4 +1,5 @@
 import actionLike from "./actionLike.js";
+import countProduct from "./countProduct.js";
 import getProducts from "./getProducts.js";
 import infoModalProduct from "./infoModalProduct.js";
 import menuMobile from "./menuMobile.js";
@@ -23,6 +24,10 @@ const $closeOpenModalWish = d.getElementById("closeOpenModalWish");
 const $modalProductWish = d.getElementById("modalProductWish");
 const $fatherModalWish = d.getElementById("modalWishContent");
 const $erroWishList = d.getElementById("erroWishList");
+// countProduct
+const $incrementProduct = d.getElementById("incrementProduct");
+const $decrementProduct = d.getElementById("decrementProduct");
+const $countProductModal = d.getElementById("countProductModal");
 
 getProducts($productsContainer);
 actionLike();
@@ -42,3 +47,4 @@ wishList(
   $fatherModalWish,
   $erroWishList
 );
+countProduct($incrementProduct, $decrementProduct, $countProductModal);

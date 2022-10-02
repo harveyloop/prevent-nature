@@ -67,20 +67,69 @@
   margin: 1rem 0;
 }
 
-.modal-info-product-just__center_modal_second span {
+.modal-info-product-just__center_modal_second-price {
   color: var(--green-dark);
   font-size: 1rem;
   font-weight: 800;
 }
-.modal-info-product-just__center_modal_second button {
+.modal-info-product-just__center_modal_second__count-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  width: 5rem;
+  height: 3rem;
+}
+.modal-info-product-just__center_modal_second__count-container span {
+  background: transparent;
+  border-bottom: 1px solid var(--gray);
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--gray);
+  font-size: 0.8rem;
+}
+.modal-info-product-just__center_modal_second__count-container button {
+  background: transparent;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  transition: 0.3s;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.modal-info-product-just__center_modal_second__count-container button:hover {
+  color: var(--white);
+  background-color: var(--green-light);
+  border: none;
+}
+.modal-info-product-just__center_modal_second__count {
+  display: flex;
+}
+.modal-info-product-just__center_modal_second__count {
+  margin: 1rem 1rem 2rem 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-info-product-just__center_modal_second__count-container button {
+  margin: 0;
+}
+.modal-info-product-just__center_modal_second__count-start {
   padding: 1rem 2rem;
   border: none;
   color: var(--white);
   background-color: var(--green-light);
   border-radius: 0.3em;
   font-weight: 700;
-  font-size: 0.8rem;
-  margin: 1rem 0 2rem 0;
+  transition: 0.3s;
+}
+.hr-modal-product-just {
+  height: 0.5px;
+  width: 100%;
+  color: var(--gray);
+  border: none;
+  background-color: var(--gray);
+}
+.modal-info-product-just__center_modal_second__count-start:hover {
+  background-color: var(--green-med-dark);
 }
 @media (min-width: 720px) {
   .modal-info-product-just__center_modal {
@@ -99,7 +148,8 @@
   }
   .modal-info-product-just__center_modal_second {
     height: 400px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .modal-info-product-just__center_modal_second h4 {
     margin: 2rem 4rem 0.5rem 1rem;
@@ -107,13 +157,22 @@
   .modal-info-product-just__center_modal_second p {
     margin: 1rem 4rem 1rem 1rem;
   }
-  .modal-info-product-just__center_modal_second span {
+  .modal-info-product-just__center_modal_second-price {
     margin: 0 1rem;
   }
-  .modal-info-product-just__center_modal_second button {
-    margin: 1rem 0 2rem 1rem;
-  }
+
   .test-close-modal-info-product {
     margin: 1rem 1.5rem;
+  }
+  .modal-info-product-just__center_modal_second__count {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .hr-modal-product-just {
+    width: 170%;
+    border: 1px solid var(--gray);
+    scale: 0.5;
+    position: relative;
+    left: -39%;
   }
 }
