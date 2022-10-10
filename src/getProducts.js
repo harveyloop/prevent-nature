@@ -22,7 +22,7 @@ const getProducts = async (father) => {
       let responsiveInfoItem = document.createElement("div");
       let nameProduct = document.createElement("h4");
       let elementP = document.createElement("p");
-      let responsiveInfoItemButton = document.createElement("button");
+      let responsiveInfoItemButton = document.createElement("a");
       let responsiveInfoItemButtonText = document.createElement("span");
       let separatorresponsiveInfoItem = document.createElement("hr");
       let responsiveInfoItemButtonImage = document.createElement("span");
@@ -46,7 +46,7 @@ const getProducts = async (father) => {
         "responsive-info-item-button__image";
 
       actionItemLove.setAttribute("productId", `${item.id}`);
-
+      responsiveInfoItemButton.setAttribute("href", `${item.messageWhats}`);
       actionItemInfoModal.setAttribute("productIdInfo", `${item.id}`);
       imgActionItemInfoModal.setAttribute("productIdInfo", `${item.id}`);
       imgActionItemInfoModal.setAttribute("src", `../assets/info-item.svg`);

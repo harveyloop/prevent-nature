@@ -56,7 +56,7 @@
   align-items: start;
 }
 .modal-info-product-just__center_modal_second h4 {
-  font-size: 1.32rem;
+  font-size: 1.3rem;
   color: var(--black);
   margin-bottom: 0.5rem;
 }
@@ -69,7 +69,8 @@
 
 .modal-info-product-just__center_modal_second-price {
   color: var(--green-dark);
-  font-size: 1rem;
+  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 .modal-info-product-just__center_modal_second__count-container {
@@ -174,5 +175,8 @@
     scale: 0.5;
     position: relative;
     left: -39%;
+  }
+  .modal-info-product-just__center_modal_second h4 {
+    font-size: 1.6rem;
   }
 }
