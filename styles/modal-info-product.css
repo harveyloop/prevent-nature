@@ -62,15 +62,15 @@
 }
 .modal-info-product-just__center_modal_second p {
   color: var(--gray);
-  font-size: 0.8rem;
-  line-height: 20px;
+  font-size: 0.9rem;
+  line-height: 25px;
   margin: 1rem 0;
 }
 
 .modal-info-product-just__center_modal_second-price {
   color: var(--green-dark);
-  font-size: 2rem;
   font-size: 1.3rem;
+  margin-top: 2rem;
   font-weight: 800;
 }
 .modal-info-product-just__center_modal_second__count-container {
@@ -159,7 +159,7 @@
     margin: 1rem 4rem 1rem 1rem;
   }
   .modal-info-product-just__center_modal_second-price {
-    margin: 0 1rem;
+    margin: 2rem 1rem 0 1rem;
   }
 
   .test-close-modal-info-product {

@@ -6,6 +6,10 @@ const getProducts = async (father) => {
     let res = await fetch(url);
     let json = await res.json();
     json.forEach((item) => {
+      let theStorage = JSON.parse(localStorage.getItem("likeProduct"));
+      let convertId = `${item.id}`;
+      let validator = theStorage.find((item) => item.id == convertId);
+
       let convertNumber = parseFloat(item.price).toFixed(2);
       let divTemp = document.createElement("div");
       divTemp.className = "products-info-container__second-box";
@@ -27,11 +31,19 @@ const getProducts = async (father) => {
       let separatorresponsiveInfoItem = document.createElement("hr");
       let responsiveInfoItemButtonImage = document.createElement("span");
       let imgResponsiveInfoItemButtonImage = document.createElement("img");
+      let viewProductInfoCompleted = document.createElement("a");
 
+      viewProductInfoCompleted.className = "view-product-completed__info";
       bgResponsiveImageItem.className = "bg-responsive-image-item";
       bgResponsiveImageItemActionUser.className =
         "bg-responsive-image-item__action-user";
-      actionItemLove.className = "action-item-love";
+
+      if (validator) {
+        actionItemLove.className = "action-item-love like-active";
+      } else {
+        actionItemLove.className = "action-item-love";
+      }
+
       actionItemInfoModal.className = "action-item-info-modal";
       imgActionItemInfoModal.className = "action47adcbu45";
       hovDetailBgResponsiveImageItem.className =
