@@ -31,9 +31,6 @@ const getProducts = async (father) => {
       let separatorresponsiveInfoItem = document.createElement("hr");
       let responsiveInfoItemButtonImage = document.createElement("span");
       let imgResponsiveInfoItemButtonImage = document.createElement("img");
-      let viewProductInfoCompleted = document.createElement("a");
-
-      viewProductInfoCompleted.className = "view-product-completed__info";
       bgResponsiveImageItem.className = "bg-responsive-image-item";
       bgResponsiveImageItemActionUser.className =
         "bg-responsive-image-item__action-user";

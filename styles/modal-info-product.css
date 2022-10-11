@@ -27,12 +27,15 @@
   place-items: center;
   overflow: auto;
   transition: 0.3s;
+  gap: 2rem;
 }
 .modal-info-product-just__center_modal_first {
   display: grid;
   place-items: center;
   width: 100%;
   height: 400px;
+  position: relative;
+  overflow: hidden;
 }
 .modal-info-product-just__center_modal_first div {
   width: 100%;
@@ -40,6 +43,14 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.modal-info-product-just__center_modal_first
+  div:hover
+  + .modal-info-product-just__center_modal_first__link_a {
+  bottom: 0;
+}
+.modal-info-product-just__center_modal_first__link_a:hover {
+  bottom: 0;
 }
 .test-close-modal-info-product {
   position: absolute;
@@ -132,7 +143,23 @@
 .modal-info-product-just__center_modal_second__count-start:hover {
   background-color: var(--green-med-dark);
 }
+.modal-info-product-just__center_modal_first__link_a {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--green-light);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+}
 @media (min-width: 720px) {
+  .modal-info-product-just__center_modal_first__link_a {
+    bottom: -100vw;
+  }
   .modal-info-product-just__center_modal {
     grid-template-columns: 50% 50%;
     height: 400px;
@@ -178,5 +205,8 @@
   }
   .modal-info-product-just__center_modal_second h4 {
     font-size: 1.6rem;
+  }
+  .modal-info-product-just__center_modal {
+    gap: 0;
   }
 }
