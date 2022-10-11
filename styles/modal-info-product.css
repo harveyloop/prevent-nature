@@ -58,6 +58,7 @@
   top: 0;
   margin: 1rem 0.5rem;
   cursor: pointer;
+  z-index: 500;
 }
 .modal-info-product-just__center_modal_second {
   width: 100%;
@@ -82,7 +83,7 @@
   color: var(--green-dark);
   font-size: 1.3rem;
   margin-top: 2rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .modal-info-product-just__center_modal_second__count-container {
   display: grid;
