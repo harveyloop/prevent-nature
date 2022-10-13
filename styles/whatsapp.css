@@ -14,10 +14,19 @@
   padding: 0.5rem;
   border-radius: 255px;
   border: none;
+  transition: 1s;
 }
 .button-whatsapp img {
   cursor: pointer;
   width: 30px;
+}
+
+.button-whatsapp a:hover {
+  background: linear-gradient(
+    73deg,
+    rgba(59, 128, 93, 1) 0%,
+    rgba(40, 180, 109, 1) 100%
+  );
 }
 @media (min-width: 1000px) {
   .button-whatsapp {
