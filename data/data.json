@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Café con moringa sin lactosa 3 en uno",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "Café con moringa endulzado con STEVIA",
+    "description": "El café AMAGI aporta más de 90 fitonutrientes esenciales entre; vitaminas, proteínas, carbohidratos, minerales, aminoácidos, grasas esenciales, fibra; 46 antioxidantes, 36 anti-inflamatorios, 300 enzimas, clorofila, oligoelementos, omega 3,6 y 0, ZEATINA (fitohormona de rejuvenecimiento). Además, el café esta endulzado con STEVIA, una planta que es 300 veces más dulce que el azúcar, y no tiene calorías.",
     "like": false,
     "price": 85.0,
     "img": "../assets/coffee.png",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name": "Capsulas de semilla de moringa / Harina de moringa",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "Capsulas de semilla de moringa",
+    "description": "Las capsulas de semillas de moringa biolife traen consigo un gran concentrado de energía natural. Nos ayuda a combatir y prevenir más de 300 enfermedades consumirlo aporta a nuestro organismo vitaminas, minerales, antioxidantes y todos los aminoácidos esenciales que necesita.",
     "like": false,
     "price": 130.0,
     "img": "../assets/greenpild.png",
@@ -20,16 +20,16 @@
   {
     "id": 3,
     "name": "EFICLAX, Laxante natural con semillas de moringa",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "description": "Es la única formulación que contiene un proceso de liofilización de las semillas de moringa acompañado de hojas y frutos de pitahaya, ciruela, dátiles, mora y yacón que busca enseñarte a nutrir bien tu cuerpo y darte el equilibrio que necesitas para potenciar tu sistema de auto limpieza y así mejorar las funciones depurativas que ya tiene incorporadas.",
     "like": false,
-    "price": 244.99,
+    "price": 149.99,
     "img": "../assets/detox.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 4,
     "name": "ALTHUS, energizante de moringa, sabor guaraná, con maca",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "description": "Ayuda a reducir síntomas del estrés y fatiga además que actúa como energizante y estimulante natural. Favorece la sensación de saciedad en el organismo lo que beneficia la pérdida de peso. Reduce la hinchazón estomacal y mejora la digestión Asimismo sus propiedades antioxidantes son mayores que los del té verde. Esto le permite ayudar a combatir los procesos oxidativos que enviejen prematuramente la dermis. Todos estos beneficios se han ido adaptando a las necesidades diarias de las personas, por lo que se puede encontrar diversos productos que actúan sobre problemas concretos que nos pueden afectar.",
     "like": false,
     "price": 150.0,
     "img": "../assets/althus.png",
@@ -37,73 +37,73 @@
   },
   {
     "id": 5,
-    "name": "Revella, el tiempo no pasa, colágeno con moringa",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "Revella, colágeno con moringa",
+    "description": "El colágeno es una proteína que tu cuerpo produce de manera natural hasta un promedio de los 22 años de edad, después de esta edad los niveles de colágeno en tu cuerpo bajan trayendo consigo muchas complicaciones de salud tanto estéticas como de salud, Consumir Revella, es el único producto que realmente garantiza un resultado veloz y visible.",
     "like": false,
-    "price": 299.99,
+    "price": 139.99,
     "img": "../assets/revella.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 6,
     "name": "Café con moringa con lactosa, endulzado con stevia",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "description": "Café con moringa black, endulzado con STEVIA, entre sus beneficios, fortalece el sistema inmune, regula el PH del cuerpo, ayuda a la pérdida de peso, controla la hipertensión.",
     "like": false,
-    "price": 85.99,
+    "price": 159.99,
     "img": "../assets/coffeeBlack.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 7,
-    "name": "ETERNAL, crema con extracto de moriga más vitamina E",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "ETERNAL, crema con extracto de moriga PRONTO EN VENTA",
+    "description": "Es la forma más fácil de limpiar y suavizar el rostro, incluidos los ojos y labios, en un solo gesto y sin necesidad de aclarar. Por otro lado, también conseguir eliminar excesos de sebo de la piel sin resecar. Su fórmula suave y sin perfume es adecuada para todo tipo de pieles, Formula exclusiva, elaborada a base de extracto de moringa, aceite de semilla de moringa, ácido hialurónico, vitamina A, vitamina E (alta concentración).",
     "like": false,
-    "price": 100.99,
+    "price": 0.99,
     "img": "../assets/eternal.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 8,
     "name": "Cápsulas blandas de aceite de moringa, rico en antioxidantes y fitoesteroles",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "description": "Las capsulas blandas de aceite de moringa son el aliado perfecto para potenciar tu salud en cualquier momento del día. Su presentación en capsulas te permitirá trasladarlo a donde quieras y complementarlo en cualquier bebida o alimento. Consumirlo será más que una experiencia agradable, pues esta es de fácil y rápida digestión, haciendo que sus nutrientes actúen de forma inmediata en tu organismo.",
     "like": false,
-    "price": 477.99,
+    "price": 159.99,
     "img": "../assets/ori.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 9,
-    "name": "Café con moringa, ganoderma y espirulina, sin lactosa",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "Café con moringa sabor cappuccino",
+    "description": "El café CAPUCCINO es una famosa bebida caliente que muy aparte de su dulce sabor siempre se acostumbra a tomar en momentos especiales. EL AMAGI CAPPUCCINO adicionalmente a todo esto, no contiene azúcar sino un endulzante cero calorías con una mayor concentración de moringa.",
     "like": false,
-    "price": 120.99,
+    "price": 160.0,
     "img": "../assets/newCoffee.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 10,
-    "name": "ZENIT, agua alcalina purificada con semillas de moringa",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "ZENIT, agua alcalina PRONTO EN VENTA",
+    "description": "El agua alcalina purificada con semillas de moringa, neutraliza y conserva en mejor estado el sistema inmunológico y aumenta la capacidad del cuerpo para combatir enfermedades.",
     "like": false,
-    "price": 45.0,
+    "price": 0.99,
     "img": "../assets/waterPre.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 11,
-    "name": "NUTRO, shampoo con extracto de moringa",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "name": "NUTRO, shampoo con extracto de moringa PRONTO EN VENTA",
+    "description": "Es un shampoo que contiene un gran beneficio para el cabello porque esta compuesto de extracto de moringa que preara, fortifica y regenera todo tipo de cabello.",
     "like": false,
-    "price": 70.99,
+    "price": 0.99,
     "img": "../assets/shampoo.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   },
   {
     "id": 12,
     "name": "XOL, aceite de moringa 100% natural",
-    "description": "Con un punto de humeo más alto , el aceite de coco refinado orgánico  se puede usar para hornear, saltear, freír o en cualquier otro lugar como reemplazo de aceite vegetal o mantequilla. Al ser refinado su sabor y olor son neutros, ideal para preparaciones donde necesita resaltar el sabor de todos los alimentos.  El aceite de coco refinado orgánico de Nutiva contiene 63% de triglicéridos de cadena media (ácido láurico, ácido cáprico y ácido caprílico) que nos da como beneficio un mayor aporte energético y refuerzo del sistema inmune.",
+    "description": "El aceite de moringa contiene una gran cantidad de ácidos grasos siendo el que predomina el ácido oleico, este es conocido por tener propiedades desinflamantes.",
     "like": false,
-    "price": 96.99,
+    "price": 120.0,
     "img": "../assets/exol.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   }
