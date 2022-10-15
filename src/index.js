@@ -2,6 +2,7 @@ import actionLike from "./actionLike.js";
 import countProduct from "./countProduct.js";
 import getProducts from "./getProducts.js";
 import infoModalProduct from "./infoModalProduct.js";
+import localStorageGet from "./localStorageGet.js";
 import menuMobile from "./menuMobile.js";
 import wishList from "./wishList.js";
 
@@ -48,3 +49,4 @@ wishList(
   $erroWishList
 );
 countProduct($incrementProduct, $decrementProduct, $countProductModal);
+localStorageGet();
