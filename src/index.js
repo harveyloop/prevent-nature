@@ -19,6 +19,8 @@ const $priceModalProduct = d.getElementById("productModalPrice");
 const $descriptionModalProduct = d.getElementById("productModalDescription");
 const $closeModalProduct = d.getElementById("closeModalProduct");
 const $modalProductInfo = d.getElementById("modalInfoProduct");
+const $buttonAddCar = d.getElementById("buttonAddCar");
+const $buttonSaveId = d.getElementById("buttonSaveId");
 // wishList
 const $buttonOpenModalWish = d.getElementById("buttonOpenModalWish");
 const $closeOpenModalWish = d.getElementById("closeOpenModalWish");
@@ -39,7 +41,9 @@ infoModalProduct(
   $priceModalProduct,
   $imageModalProduct,
   $descriptionModalProduct,
-  $closeModalProduct
+  $closeModalProduct,
+  $buttonAddCar,
+  $buttonSaveId
 );
 wishList(
   $buttonOpenModalWish,

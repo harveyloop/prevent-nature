@@ -1,0 +1,8 @@
+.work-center-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray);
+  opacity: 0.2;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
