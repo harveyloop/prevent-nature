@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>PREVENT NATURE</title>
   </head>
@@ -171,17 +169,42 @@
     </header>
     <!-- COMPONENTS ONE -->
     <main>
-      <section class="error-center">
-        <div class="error-center-content_all">
-            <div class="error-center-content">
-
-                <h1>404</h1>
-                <h2>NOT <br> FOUND</h2>
+      <section class="center-all-tobuy-content">
+        <div class="center-all-tobuy-content__grid">
+          <div class="tobuy-content__grid_one">
+            <img src="../assets/greenpild.png" alt="product">
+          </div>
+          <div class="tobuy-content__grid_two">
+            <div class="tobuy-content__grid_two__description">
+              <h1>
+                Capulas de moringa/100 capsulas por botella
+              </h1>
+              <span>
+                S/ 200.00
+              </span>
+              <p>
+                Las capsulas de semillas de moringa biolife traen consigo un gran concentrado de energía natural. Nos ayuda a combatir y prevenir más de 300 enfermedades consumirlo aporta a nuestro organismo vitaminas, minerales, antioxidantes y todos los aminoácidos esenciales que necesita.
+              </p>
+            </div>
+            <div class="tobuy-content__grid_two__buttons">
+              <!-- Re used component -->             
+               <div class="tobuy-content__grid_two__buttons_whatsapp">
+                <button>
+                  Consultar producto por WhatsApp
+                </button>
+              </div>
+              <div class="tobuy-content__grid_two__buttons__container">
+                
+                <div class="tobuy-content__grid_two__buttons__container-count">
+                  <button id="decrementProduct">-</button>
+                  <span id="countProductModal">0</span>
+                  <button id="incrementProduct">+</button>
+                </div>
+                <button class="tobuy-content__grid_two__buttons__container__buy">Comprar ahora <img src="../assets/icon-paypal.svg" alt="paypal" ></button>
+              </div>
 
             </div>
-            <h3>Parece que esta página no existe.</h3>
-            <p>Parece que el enlace que apuntaba aquí no sirve. ¿Quieres probar con una búsqueda? 
-            </p>
+          </div>
         </div>
       </section>
     </main>

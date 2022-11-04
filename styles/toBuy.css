@@ -1,0 +1,119 @@
+.center-all-tobuy-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.center-all-tobuy-content__grid {
+  display: grid;
+  padding: 0 2rem;
+  max-width: 1200px;
+}
+.tobuy-content__grid_one {
+  display: flex;
+  justify-content: center;
+}
+.tobuy-content__grid_one img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+.tobuy-content__grid_two__description h1 {
+  font-size: 1.5rem;
+  color: var(--black);
+  max-width: 23rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.tobuy-content__grid_two__description p {
+  line-height: 25px;
+  color: var(--gray);
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.tobuy-content__grid_two__description span {
+  font-size: 1.3rem;
+  color: var(--green-dark);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.tobuy-content__grid_two__buttons__container-count {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  width: 5rem;
+  height: 3.625rem;
+}
+.tobuy-content__grid_two__buttons__container-count span {
+  background: transparent;
+  border-bottom: 1px solid var(--gray);
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--gray);
+  font-size: 0.8rem;
+}
+.tobuy-content__grid_two__buttons__container-count button {
+  background: transparent;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  transition: 0.3s;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.tobuy-content__grid_two__buttons__container-count button:hover {
+  color: var(--white);
+  background-color: var(--green-light);
+  border: none;
+}
+.tobuy-content__grid_two__buttons__container__buy {
+  padding: 1rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--green-light);
+  border-radius: 0.3em;
+  font-weight: 700;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  justify-content: space-around;
+}
+.tobuy-content__grid_two__buttons__container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.tobuy-content__grid_two__buttons_whatsapp {
+  text-align: center;
+  margin: 3rem 0;
+}
+.tobuy-content__grid_two__buttons_whatsapp button {
+  width: 100%;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: #8b8b8b21;
+  color: var(--gray);
+}
+@media (min-width: 900px) {
+  .center-all-tobuy-content__grid {
+    grid-template-columns: 50% 50%;
+  }
+  .center-all-tobuy-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+  .tobuy-content__grid_two__description h1 {
+    text-align: left;
+  }
+  .tobuy-content__grid_two__buttons__container {
+    justify-content: start;
+    gap: 2rem;
+  }
+}
