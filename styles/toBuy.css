@@ -98,7 +98,19 @@
   background-color: #8b8b8b21;
   color: var(--gray);
 }
+.price-desktop-just {
+  display: none;
+}
 @media (min-width: 900px) {
+  .tobuy-content__grid_two__buttons {
+    grid-template-areas: "one" "two";
+  }
+  .tobuy-content__grid_two__buttons__container {
+    grid-area: two;
+  }
+  .tobuy-content__grid_two__buttons_whatsapp {
+    grid-area: one;
+  }
   .center-all-tobuy-content__grid {
     grid-template-columns: 50% 50%;
   }
@@ -115,5 +127,15 @@
   .tobuy-content__grid_two__buttons__container {
     justify-content: start;
     gap: 2rem;
+  }
+  .tobuy-content__grid_two__description span {
+    display: none;
+  }
+  .price-desktop-just {
+    font-size: 1.3rem;
+    color: var(--green-dark);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: block;
   }
 }

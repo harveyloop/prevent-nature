@@ -4,6 +4,7 @@ import getProducts from "./getProducts.js";
 import infoModalProduct from "./infoModalProduct.js";
 import localStorageGet from "./localStorageGet.js";
 import menuMobile from "./menuMobile.js";
+import toBuy from "./toBuy.js";
 import wishList from "./wishList.js";
 
 const d = document;
@@ -54,3 +55,4 @@ wishList(
 );
 countProduct($incrementProduct, $decrementProduct, $countProductModal);
 localStorageGet();
+toBuy();
