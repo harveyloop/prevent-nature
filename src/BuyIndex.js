@@ -1,7 +1,4 @@
-import actionLike from "./actionLike.js";
 import countProduct from "./countProduct.js";
-import getProducts from "./getProducts.js";
-import infoModalProduct from "./infoModalProduct.js";
 import localStorageGet from "./localStorageGet.js";
 import menuMobile from "./menuMobile.js";
 import toBuy from "./toBuy.js";
@@ -9,20 +6,11 @@ import toBuyLoad from "./toBuyLoad.js";
 import wishList from "./wishList.js";
 
 const d = document;
-// getProducts
-const $productsContainer = d.getElementById("productsContainer");
+
 // menuMobile
 const $menuMobile = d.getElementById("menuMobile");
 const $ham = d.getElementById("hamButton");
-// infoModalProduct
-const $nameModalProduct = d.getElementById("productModalName");
-const $imageModalProduct = d.getElementById("productModalImage");
-const $priceModalProduct = d.getElementById("productModalPrice");
-const $descriptionModalProduct = d.getElementById("productModalDescription");
-const $closeModalProduct = d.getElementById("closeModalProduct");
-const $modalProductInfo = d.getElementById("modalInfoProduct");
-const $buttonAddCar = d.getElementById("buttonAddCar");
-const $buttonSaveId = d.getElementById("buttonSaveId");
+
 // wishList
 const $buttonOpenModalWish = d.getElementById("buttonOpenModalWish");
 const $closeOpenModalWish = d.getElementById("closeOpenModalWish");
@@ -34,19 +22,16 @@ const $incrementProduct = d.getElementById("incrementProduct");
 const $decrementProduct = d.getElementById("decrementProduct");
 const $countProductModal = d.getElementById("countProductModal");
 
-getProducts($productsContainer);
-actionLike();
+// toBuyLoad
+const $titleProduct = d.getElementById("titleProductBuy");
+const $descriptionProduct = d.getElementById("descriptionProductBuy");
+const $payPal = d.getElementById("paypalButtonBuy");
+const $priceProduct = d.getElementById("priceProductBuy");
+const $whatsAppButton = d.getElementById("whatsAppButtonBuy");
+const $imgBuyShow = d.getElementById("imgBuyShow");
+
 menuMobile($ham, $menuMobile);
-infoModalProduct(
-  $modalProductInfo,
-  $nameModalProduct,
-  $priceModalProduct,
-  $imageModalProduct,
-  $descriptionModalProduct,
-  $closeModalProduct,
-  $buttonAddCar,
-  $buttonSaveId
-);
+
 wishList(
   $buttonOpenModalWish,
   $closeOpenModalWish,
@@ -57,4 +42,11 @@ wishList(
 countProduct($incrementProduct, $decrementProduct, $countProductModal);
 localStorageGet();
 toBuy();
-toBuyLoad();
+toBuyLoad(
+  $titleProduct,
+  $descriptionProduct,
+  $payPal,
+  $priceProduct,
+  $whatsAppButton,
+  $imgBuyShow
+);

@@ -68,6 +68,10 @@ const getProducts = async (father) => {
       );
 
       aHovDetailBgResponsiveImageItem.textContent = "VER DETALLE";
+      aHovDetailBgResponsiveImageItem.className = "link-detail";
+      aHovDetailBgResponsiveImageItem.setAttribute("href", "./toBuy.html");
+      aHovDetailBgResponsiveImageItem.setAttribute("idaddcart", `${item.id}`);
+
       nameProduct.textContent = `${item.name}`;
       elementP.textContent = `S/ ${convertNumber}`;
       responsiveInfoItemButtonText.textContent = "CONSULTAR POR WHATSAPP";

@@ -16,7 +16,7 @@
 .tobuy-content__grid_one img {
   width: 100%;
   max-width: 400px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .tobuy-content__grid_two__description h1 {
   font-size: 1.5rem;
@@ -90,13 +90,14 @@
   text-align: center;
   margin: 3rem 0;
 }
-.tobuy-content__grid_two__buttons_whatsapp button {
+.tobuy-content__grid_two__buttons_whatsapp a {
   width: 100%;
   border: none;
   padding: 0.7rem;
   border-radius: 0.5rem;
   background-color: #8b8b8b21;
   color: var(--gray);
+  display: block;
 }
 .price-desktop-just {
   display: none;
