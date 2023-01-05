@@ -1,13 +1,12 @@
 import actionLike from "./actionLike.js";
-import countProduct from "./countProduct.js";
-import getProducts from "./getProducts.js";
 import infoModalProduct from "./infoModalProduct.js";
+import logicForm from "./logicForm.js";
 import menuMobile from "./menuMobile.js";
+import validateForm from "./validateForm.js";
 import wishList from "./wishList.js";
 
 const d = document;
-// getProducts
-const $productsContainer = d.getElementById("productsContainer");
+
 // menuMobile
 const $menuMobile = d.getElementById("menuMobile");
 const $ham = d.getElementById("hamButton");
@@ -24,12 +23,17 @@ const $closeOpenModalWish = d.getElementById("closeOpenModalWish");
 const $modalProductWish = d.getElementById("modalProductWish");
 const $fatherModalWish = d.getElementById("modalWishContent");
 const $erroWishList = d.getElementById("erroWishList");
-// countProduct
-const $incrementProduct = d.getElementById("incrementProduct");
-const $decrementProduct = d.getElementById("decrementProduct");
-const $countProductModal = d.getElementById("countProductModal");
 
-getProducts($productsContainer);
+//logicForm
+const $passwordForm = d.getElementById("password");
+// validateForm
+const $emailforuser = d.getElementById("emailforuser");
+const $viewErrorEmail = d.getElementById("viewErrorEmail");
+const $password = d.getElementById("password");
+const $viewErrorPassword = d.getElementById("viewErrorPassword");
+const $usernameInput = d.getElementById("usernameInput");
+const $viewErrorUserName = d.getElementById("viewErrorUserName");
+console.log($usernameInput);
 actionLike();
 menuMobile($ham, $menuMobile);
 infoModalProduct(
@@ -47,4 +51,12 @@ wishList(
   $fatherModalWish,
   $erroWishList
 );
-countProduct($incrementProduct, $decrementProduct, $countProductModal);
+logicForm($passwordForm);
+validateForm(
+  $emailforuser,
+  $viewErrorEmail,
+  $password,
+  $viewErrorPassword,
+  $usernameInput,
+  $viewErrorUserName
+);

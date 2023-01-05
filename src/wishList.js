@@ -1,15 +1,14 @@
 const wishList = (open, close, modal, fatherCopy, errorJus) => {
-  open.addEventListener("click", (e) => {
-    e.preventDefault();
-    openModalAndGetData();
-  });
   close.addEventListener("click", (e) => {
     e.preventDefault();
     toggleModal();
   });
   document.addEventListener("click", (e) => {
     let tempVarFat = fatherCopy.parentNode;
-
+    console.log(e.target.className);
+    if (e.target.className == "showAllProducts") {
+      openModalAndGetData();
+    }
     if (e.target === tempVarFat.parentNode) {
       modal.classList.toggle("wish-active-modal-js");
       document.querySelector("html").classList.toggle("noScroll");

@@ -31,7 +31,7 @@ header {
   justify-content: center;
 }
 .logo-important img {
-  width: 5.25rem;
+  width: 4.25rem;
 }
 .car-buy-container {
   justify-content: right;
@@ -70,15 +70,33 @@ header {
   justify-content: space-between;
 }
 .container-desktop-ul a,
-.container-desktop-second-ul__o a {
+.container-desktop-second-ul__o a,
+.container-desktop-second-ul__o p {
   color: var(--green-dark);
   font-weight: 700;
   font-size: 0.8rem;
   transition: 0.3s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
 }
-.container-desktop-ul a:hover,
-.container-desktop-second-ul__o a:hover {
+.container-desktop-ul a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green-dark);
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.container-desktop-ul a:hover::after {
+  transform: scale(1);
+}
+.container-desktop-second-ul__o a:hover,
+.container-desktop-second-ul__o p:hover {
   color: var(--green-light);
 }
 .container-desktop-second-div__t {
@@ -104,8 +122,7 @@ header {
 
 @media (min-width: 1000px) {
   .ham,
-  .car-buy-container,
-  .decorator-header {
+  .car-buy-container {
     display: none;
   }
   .logo-important img {

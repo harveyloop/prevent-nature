@@ -30,7 +30,7 @@
   padding: 0 1rem;
   width: 100%;
   gap: 6rem;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fill, 250px);
   place-content: center;
 }
 .nov-text-container_box__second_hov {
@@ -55,9 +55,7 @@
   transition: 0.3s;
   cursor: pointer;
 }
-.nov-text-container_box__second_hov__content h3:hover {
-  color: var(--green-dark);
-}
+
 .nov-text-container_box__second_hov__content p {
   color: var(--gray);
   line-height: 25px;
@@ -103,6 +101,9 @@
 .nov-text-container_box__second_hov__content:hover {
   scale: 1.025;
 }
+.nov-text-container_box__second_hov__content:hover h3 {
+  color: var(--green-dark);
+}
 /* media */
 @media (min-width: 1200px) {
   .nov-text-container_box__second {
@@ -113,5 +114,10 @@
   }
   .nov-text-container_box__third {
     margin-bottom: 8.25rem;
+  }
+}
+@media (min-width: 350px) {
+  .nov-text-container_box__second {
+    grid-template-columns: repeat(auto-fill, 300px);
   }
 }

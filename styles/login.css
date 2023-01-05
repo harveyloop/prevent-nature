@@ -6,11 +6,12 @@
 .center-all-login {
   max-width: 45rem;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1rem;
 }
 .center-all-login__form {
   display: grid;
@@ -26,11 +27,13 @@
   color: var(--gray);
 }
 .center-all-login__form input[type="email"],
-.center-all-login__form input[type="password"] {
+.center-all-login__form input[type="password"],
+.center-all-login__form input[type="text"] {
   padding: 0.7rem 1rem;
   border: 1px solid var(--gray);
   border-radius: 0.25em;
   margin: 1rem 0px;
+  color: var(--black);
 }
 .center-all-login__form input[type="submit"] {
   padding: 0.7rem 1rem;
@@ -40,4 +43,48 @@
   color: var(--white);
   font-weight: 700;
   letter-spacing: 0.15em;
+  font-size: 0.8rem;
+}
+.forgetpass {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: var(--green-light);
+  text-align: right;
+}
+.registerforuser {
+  padding: 0.7rem 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--white);
+  color: var(--green-light);
+  border: 1px solid var(--green-light);
+  border-radius: 0.25em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.content-view-pass {
+  display: grid;
+  position: relative;
+}
+.view-pass__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1.8rem 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
+.errorFormLog {
+  font-size: 0.7rem;
+  text-align: right;
+  font-style: italic;
+  position: relative;
+  top: -5px;
+  color: var(--error);
+}
+.passJust05 {
+  margin: 0.4rem 0;
+  top: -10px;
 }

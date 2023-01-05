@@ -17,3 +17,11 @@
 
 /* login HTML */
 @import url("./login.css");
+
+/* NOT FOUND 404 */
+
+@import url("./404.css");
+
+/* blog pages */
+
+@import url("./blog-style.css");

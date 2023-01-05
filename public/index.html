@@ -13,37 +13,37 @@
     <div class="modal-mobile-items-for-change">
       <ul class="modal-mobile-item-for-change__view_items">
         <li>
-          <a href=""
+          <p href=""
             ><img src="../assets/myacco.svg" alt="image" />
-            <p>Mi cuenta</p></a
+            <p>Mi cuenta</p></p
           >
         </li>
         <li>
-          <a href=""
+          <p href=""
             ><img src="../assets/filter.svg" alt="image" />
-            <p>Filtros</p></a
+            <p>Filtros</p></p
           >
         </li>
         <li>
-          <a href=""
+          <p href=""
             ><img src="../assets/car-green.svg" alt="image" />
-            <p>Carrito</p></a
+            <p>Carrito</p></p
           >
         </li>
-        <li>
-          <a href="" id="buttonOpenModalWish"
+        <li class="showAllProducts">
+          <p class="showAllProducts"
             ><img
-              id="buttonOpenModalWish"
               src="../assets/like-item.svg"
               alt="image"
+              class="showAllProducts"
             />
-            <p id="buttonOpenModalWish">Lista de...</p></a
+            <p class="showAllProducts">Lista de...</p></p
           >
         </li>
         <li>
-          <a href=""
+          <p href=""
             ><img src="../assets/store.svg" alt="image" />
-            <p>Tienda</p></a
+            <p>Tienda</p></p
           >
         </li>
       </ul>
@@ -73,23 +73,37 @@
 
         <div class="modal-info-product-just__center_modal_first">
           <div id="productModalImage"></div>
+          <a href="" class="modal-info-product-just__center_modal_first__link_a">VER DETALLE</a>
         </div>
         <div class="modal-info-product-just__center_modal_second">
           <h4 id="productModalName"></h4>
-          <span id="productModalPrice"></span>
+          <span id="productModalPrice" class="modal-info-product-just__center_modal_second-price"></span>
           <p id="productModalDescription"></p>
-          <button>ANADIR AL CARRITO</button>
+          <div class="modal-info-product-just__center_modal_second__count">
+            <div class="modal-info-product-just__center_modal_second__count-container">
+              <button id="decrementProduct">-</button>
+              <span id="countProductModal">0</span>
+              <button id="incrementProduct">+</button>
+            </div>
+            <button class="modal-info-product-just__center_modal_second__count-start">ANADIR AL CARRITO</button>
+          </div>
+          <hr class="hr-modal-product-just">
+          <!-- consum API -->
+          <p><b>Categoria:</b> moringa, comida, bebidas.</p>
         </div>
       </div>
     </div>
     <div class="menu-mobile" id="menuMobile">
       <nav>
         <ul>
-          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="./index.html">INICIO</a></li>
           <li><a href="#productos">PRODUCTOS</a></li>
           <li><a href="#blog">BLOG</a></li>
           <li><a href="#acerca">ACERCA DE</a></li>
-          <li><a href="#contactanos">CONTACTANOS</a></li>
+          <li><a href="#contactanos">CONTACTÁNOS</a></li>
+          <hr class="separator-mobile__menu">
+          <li class="login-menu__mobile"><a href="./login.html">ACCEDER</a></li>
+          <li class="register-menu__mobile"><a id="registerButtonPost" href="./register.html">REGISTRARSE</a></li>
         </ul>
       </nav>
     </div>
@@ -113,7 +127,7 @@
               </button>
             </li>
             <li class="logo-important flex-center">
-              <a href=""><img src="../assets/logo.svg" alt="logo" /></a>
+              <a href="./index.html"><img src="../assets/logo.svg" alt="logo" /></a>
             </li>
             <li class="car-buy-container flex-center">
               <span class="circle-count-container">
@@ -123,11 +137,11 @@
             </li>
             <div class="container-desktop">
               <ul class="container-desktop-ul">
-                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="./index.html">INICIO</a></li>
                 <li><a href="#productos">PRODUCTOS</a></li>
                 <li><a href="#blog">BLOG</a></li>
                 <li><a href="#acerca">ACERCA DE</a></li>
-                <li><a href="#contactanos">CONTACTANOS</a></li>
+                <li><a href="#contactanos">CONTACTÁNOS</a></li>
               </ul>
             </div>
           </div>
@@ -138,7 +152,7 @@
               <li><a href="./login.html">INGRESAR</a></li>
               <hr />
               <li>
-                <a href="" id="buttonOpenModalWish">CARRO</a>
+                <p id="buttonOpenModalWish" class="showAllProducts">CARRO</p>
               </li>
             </ul>
             <div class="container-desktop-second-div__t">
