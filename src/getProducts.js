@@ -6,10 +6,18 @@ const getProducts = async (father) => {
     let res = await fetch(url);
     let json = await res.json();
     json.forEach((item) => {
-      let theStorage = JSON.parse(localStorage.getItem("likeProduct"));
-      let convertId = `${item.id}`;
-      let validator = theStorage.find((item) => item.id == convertId);
+      let theStorage = localStorage.getItem("likeProduct");
+      let storageTranform;
+      if (typeof theStorage === "string") {
+        storageTranform = JSON.parse(theStorage);
+      } else {
+        storageTranform = [];
+      }
 
+      let convertId = `${item.id}`;
+
+      let validator = storageTranform.find((item) => item.id == convertId);
+      console.log(validator);
       let convertNumber = parseFloat(item.price).toFixed(2);
       let divTemp = document.createElement("div");
       divTemp.className = "products-info-container__second-box";
