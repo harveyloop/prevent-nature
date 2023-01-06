@@ -1,0 +1,42 @@
+[
+  {
+    "id": "blog-1",
+    "name-blog": "Beneficios de consumir moringa",
+    "content-blog": "Moringa oleífera, es un árbol que pertenece a la familia Moringaceae, actualmente se cultiva en todas las regiones tropicales, subtropicales y semiáridas del mundo. Moringa oleífera ha sido utilizada por el hombre desde muchos años. Ya que las hojas de eta presentan un elevado contenido de vitaminas, provitaminas y minerales, Así mismo contienen casi todos los aminoácidos esenciales para la vida, incluyendo algunos como la arginina (mejora el flujo sanguíneo), y la histidina(elimina exceso de metales pesados). Que se encuentran generalmente en la proteína de origen animal.  Hay muchos mas beneficios por consumir moringa:",
+    "list-blog": [],
+    "principal_image": "assets/moringa-blog-jpg",
+    "second_image": "",
+    "time": "",
+    "show": 0
+  },
+  {
+    "id": "blog-1",
+    "name-blog": "",
+    "content-blog": "",
+    "list-blog": [],
+    "principal_image": "",
+    "second_image": "",
+    "time": "",
+    "show": 0
+  },
+  {
+    "id": "blog-1",
+    "name-blog": "",
+    "content-blog": "",
+    "list-blog": [],
+    "principal_image": "",
+    "second_image": "",
+    "time": "",
+    "show": 0
+  },
+  {
+    "id": "blog-1",
+    "name-blog": "",
+    "content-blog": "",
+    "list-blog": [],
+    "principal_image": "",
+    "second_image": "",
+    "time": "",
+    "show": 0
+  }
+]
