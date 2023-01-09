@@ -1,5 +1,10 @@
-export function scrollProduct(item) {
-  item.addEventListener("click", scrollClick);
+export function scrollProduct() {
+  document.addEventListener("click", (e) => {
+    if (e.target.className.includes("productGet")) {
+      scrollClick();
+    }
+    console.log(e.target.className);
+  });
 }
 function scrollClick() {
   window.scroll({

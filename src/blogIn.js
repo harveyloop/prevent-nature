@@ -1,3 +1,4 @@
+import blogSelect from "./blogSelect.js";
 import blogData from "./getBlog.js";
 import linkBlog from "./linkBlog.js";
 import menuMobile from "./menuMobile.js";
@@ -14,13 +15,13 @@ const $closeOpenModalWish = d.getElementById("closeOpenModalWish");
 const $modalProductWish = d.getElementById("modalProductWish");
 const $fatherModalWish = d.getElementById("modalWishContent");
 const $erroWishList = d.getElementById("erroWishList");
-//getBlog.js
-const $loadBlog = d.getElementById("loadBlog");
-const $imageBlog = d.getElementById("imageBlog");
-const $timeBlog = d.getElementById("timeBlog");
+// blogSelect
+const $fatherBlog = d.getElementById("fatherBlog");
 const $titleBlog = d.getElementById("titleBlog");
-const $descriptionBlog = d.getElementById("descriptionBlog");
-const $linkPrincipal = d.getElementById("linkPrincipal");
+const $textBlog = d.getElementById("textBlog");
+const $dateBlog = d.getElementById("dateBlog");
+const $imageBlog = d.getElementById("imageBlog");
+
 menuMobile($ham, $menuMobile);
 wishList(
   $buttonOpenModalWish,
@@ -29,12 +30,5 @@ wishList(
   $fatherModalWish,
   $erroWishList
 );
-blogData(
-  $loadBlog,
-  $timeBlog,
-  $titleBlog,
-  $imageBlog,
-  $descriptionBlog,
-  $linkPrincipal
-);
 linkBlog();
+blogSelect($fatherBlog, $textBlog, $titleBlog, $dateBlog, $imageBlog);

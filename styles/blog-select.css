@@ -1,0 +1,39 @@
+.blog-general {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+.blog-general__date_image {
+  margin: 2rem 0;
+}
+.blog-general__date_image img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.blog-general_description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--gray);
+  line-height: 2rem;
+}
+.blog-general__date_image span {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.blog-general__title {
+  color: var(--black);
+  font-size: 2rem;
+}
+.list-of-json li {
+  list-style: initial;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--black);
+}
+.list-of-json {
+  margin: 2rem;
+}

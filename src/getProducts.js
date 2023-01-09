@@ -132,6 +132,7 @@ const getProducts = async (father) => {
     elementMoreProductsChild.textContent = "Ver mas productos";
     elementMoreProducts.className =
       "products-info-container__third grid-center";
+    elementMoreProductsChild.className = "productGet";
     elementMoreProducts.appendChild(elementMoreProductsChild);
     fatherForMoreProducts.appendChild(elementMoreProducts);
   } catch (err) {

@@ -1,4 +1,11 @@
-export function blogData() {
+export default function blogData(
+  father,
+  timePrincipal,
+  titlePrincipal,
+  imagePrincial,
+  descriptionPrincipal,
+  linkPrincipal
+) {
   const $fragment = document.createDocumentFragment();
   async function getBlog() {
     const url = "/data/blog.json";
@@ -11,7 +18,10 @@ export function blogData() {
           statusText: res.statusText,
         };
       }
+      imagePrincial.style.objectFit = "cover";
       json.forEach((item) => {
+        const cutText = item["content-blog"].slice(0, 200);
+
         const $blogNoticeDiv = document.createElement("div");
         const $blogNoticeImage = document.createElement("div");
         const $blogImage = document.createElement("img");
@@ -28,7 +38,8 @@ export function blogData() {
         $blogTime.setAttribute("class", "blog-notice-box-time");
         $blogTitle.setAttribute("class", "blog-notice-box-title");
         $blogDescription.setAttribute("class", "blog-notice-box-description");
-        $blogLink.setAttribute("href", "");
+        $blogLink.setAttribute("href", "/public/blogSelect.html");
+        $blogLink.setAttribute("id-blog", `${item.id}`);
         $blogLink.setAttribute("class", "blog-notice-box-link");
 
         $blogNoticeDiv.appendChild($blogNoticeImage);
@@ -44,10 +55,43 @@ export function blogData() {
         $blogView.textContent = "0 views";
         $blogTime.textContent = `${item.time}`;
         $blogTitle.textContent = `${item["name-blog"]}`;
-        $blogDescription.textContent = `${item["content-blog"]}`;
+        $blogDescription.textContent = `${cutText}...`;
+        $blogLink.text = "Leer mas";
+
+        $fragment.appendChild($blogNoticeDiv);
       });
+      father.appendChild($fragment);
+
+      const random = parseInt(Math.random() * json.length);
+      const selectBlog = json[random];
+      timePrincipal.textContent = selectBlog.time;
+      titlePrincipal.textContent = selectBlog["name-blog"];
+      descriptionPrincipal.textContent = `${selectBlog["content-blog"].slice(
+        0,
+        300
+      )}...`;
+      imagePrincial.setAttribute("src", `${selectBlog["principal_image"]}`);
+      linkPrincipal.setAttribute("id-blog", `${selectBlog.id}`);
     } catch (err) {
       console.log(err);
+      console.log(err);
+      const $fragmentTemp = document.createDocumentFragment();
+      let myElementErr = document.createElement("h4");
+      let mySecondElementErr = document.createElement("h3");
+      let myThirdElementErr = document.createElement("div");
+      myThirdElementErr.className = "err-product-load";
+      mySecondElementErr.textContent = ":(";
+      myElementErr.textContent = "Lo sentimos sucedio un error";
+      myThirdElementErr.appendChild(mySecondElementErr);
+      myThirdElementErr.appendChild(myElementErr);
+      $fragmentTemp.appendChild(myThirdElementErr);
+      father.parentElement.parentElement.appendChild($fragmentTemp);
+
+      timePrincipal.textContent = "404 ERROR";
+      titlePrincipal.textContent = "404 ERROR";
+      descriptionPrincipal.textContent = `404 ERROR`;
+      imagePrincial.setAttribute("src", `/assets/logo.svg`);
+      imagePrincial.style.objectFit = "contain";
     }
   }
   getBlog();
