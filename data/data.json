@@ -97,14 +97,5 @@
     "price": 0.99,
     "img": "../assets/shampoo.png",
     "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
-  },
-  {
-    "id": 12,
-    "name": "XOL, aceite de moringa 100% natural",
-    "description": "El aceite de moringa contiene una gran cantidad de ácidos grasos siendo el que predomina el ácido oleico, este es conocido por tener propiedades desinflamantes.",
-    "like": false,
-    "price": 120.0,
-    "img": "../assets/exol.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
   }
 ]
