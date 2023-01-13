@@ -74,7 +74,7 @@
 
         <div class="modal-info-product-just__center_modal_first">
           <div id="productModalImage"></div>
-          <a href="" class="modal-info-product-just__center_modal_first__link_a" id="buttonSaveId">VER DETALLE</a>
+          <a href="./toBuy.html" class="modal-info-product-just__center_modal_first__link_a" id="buttonSaveId">VER DETALLE</a>
         </div>
         <div class="modal-info-product-just__center_modal_second">
           <h4 id="productModalName"></h4>
@@ -98,10 +98,10 @@
       <nav>
         <ul>
           <li><a href="./index.html">INICIO</a></li>
-          <li><a href="#productos">PRODUCTOS</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#acerca">ACERCA DE</a></li>
-          <li><a href="#contactanos">CONTACTÁNOS</a></li>
+          <li><a href="./index.html">PRODUCTOS</a></li>
+          <li><a href="./blogpage.html">BLOG</a></li>
+          <li><a href="./index.html">ACERCA DE</a></li>
+          <li><a href="./index.html">CONTACTÁNOS</a></li>
           <hr class="separator-mobile__menu">
           <li class="login-menu__mobile"><a href="./login.html">ACCEDER</a></li>
           <li class="register-menu__mobile"><a id="registerButtonPost" href="./register.html">REGISTRARSE</a></li>
@@ -110,7 +110,7 @@
     </div>
     <header>
       <div class="decorator-header">
-        <p>CALLE AGUA 844, HUANCAYO | +51 967 523 180</p>
+        <p>PREVENT NATURE | +51 927 017 135</p>
       </div>
       <nav class="navegator">
         <ul class="flex-center">
@@ -138,11 +138,11 @@
             </li>
             <div class="container-desktop">
               <ul class="container-desktop-ul">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="#productos">PRODUCTOS</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#acerca">ACERCA DE</a></li>
-                <li><a href="#contactanos">CONTACTÁNOS</a></li>
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./index.html">PRODUCTOS</a></li>
+          <li><a href="./blogpage.html">BLOG</a></li>
+          <li><a href="./index.html">ACERCA DE</a></li>
+          <li><a href="./index.html">CONTACTÁNOS</a></li>
               </ul>
             </div>
           </div>
@@ -172,7 +172,7 @@
                 />
               </svg>
 
-              <input type="text" placeholder="Buscar algun producto" />
+              <input type="text" class="productGet" placeholder="Buscar algun producto" id="searchProduct"/>
             </div>
             <span></span>
           </div>
@@ -231,7 +231,7 @@
               Somos una tienda online que tiene como objetivo llevar los
               beneficios de los producto naturales que ofrece el Perú.
               Superalimentos con muchos beneficios para la salud y el bienestar
-              de las personas
+              de las personas.
             </p>
           </div>
           <div class="whoami-text-container__second grid-center">
@@ -292,69 +292,17 @@
           <div class="nov-text-container_box__first grid-center">
             <h2>Noticias</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-              voluptatibus reiciendis dolore maiores odit est eveniet sapiente
-              voluptate!
+              Nuestras ultimas actualizaciones, recetas, tips y anuncios sobre productos BioLife.
             </p>
           </div>
-          <div class="nov-text-container_box__second grid-center">
-            <div class="nov-text-container_box__second_hov__content">
-              <div class="nov-text-container_box__second_hov">
-                <div class="actionidjust04">
-                  <img src="../assets/ejm1.png" alt="noticia" />
-                </div>
-                <span>22 de abril, 2022</span>
-              </div>
-              <h3>Moringa en tus platos favoritos</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                vel quae aspernatur reprehenderit quaerat saepe a corrupti nisi?
-                Magnam ab et quibusdam perspiciatis sapiente nam corporis
-                assumenda doloribus ut omnis. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Harum vel quae aspernatur
-                reprehenderit quaerat saepe a corrupti nisi?
-              </p>
-            </div>
-            <div class="nov-text-container_box__second_hov__content">
-              <div class="nov-text-container_box__second_hov">
-                <div class="actionidjust04">
-                  <img src="../assets/ejm2.jpg" alt="noticia" />
-                </div>
-                <span>22 de abril, 2022</span>
-              </div>
-              <h3>Eleva tu rendimiento en los deportes con moringa</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                vel quae aspernatur reprehenderit quaerat saepe a corrupti nisi?
-                Magnam ab et quibusdam perspiciatis sapiente nam corporis
-                assumenda doloribus ut omnis. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Harum vel quae aspernatur
-                reprehenderit quaerat saepe a corrupti nisi?
-              </p>
-            </div>
-            <div class="nov-text-container_box__second_hov__content">
-              <div class="nov-text-container_box__second_hov">
-                <div class="actionidjust04">
-                  <img src="../assets/ejm3.png" alt="noticia" />
-                </div>
-                <span>22 de abril, 2022</span>
-              </div>
-              <h3>Todos los beneficios tras consumir moringa</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                vel quae aspernatur reprehenderit quaerat saepe a corrupti nisi?
-                Magnam ab et quibusdam perspiciatis sapiente nam corporis
-                assumenda doloribus ut omnis.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Harum vel quae aspernatur
-                reprehenderit quaerat saepe a corrupti nisi?
-              </p>
-            </div>
+          <div class="nov-text-container_box__second grid-center" id="blogIndex">
+
           </div>
           <div
             class="nov-text-container_box__third grid-center"
             id="contactanos"
           >
-            <a href="">Ver mas noticias</a>
+            <a href="/public/blogpage.html">Ver mas noticias</a>
           </div>
         </div>
       </section>
@@ -383,7 +331,7 @@
 
         <div class="all-content-center__footer-media">
           <li>
-            <a href="">
+            <a href="https://es-la.facebook.com/">
               <svg
                 width="25"
                 height="25"
@@ -399,7 +347,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://twitter.com">
               <svg
                 width="25"
                 height="21"
@@ -415,7 +363,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://www.instagram.com">
               <svg
                 width="22"
                 height="22"

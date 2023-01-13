@@ -86,10 +86,10 @@
       <nav>
         <ul>
           <li><a href="./index.html">INICIO</a></li>
-          <li><a href="#productos">PRODUCTOS</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#acerca">ACERCA DE</a></li>
-          <li><a href="#contactanos">CONTACTÁNOS</a></li>
+          <li><a href="./index.html">PRODUCTOS</a></li>
+          <li><a href="./blogpage.html">BLOG</a></li>
+          <li><a href="./index.html">ACERCA DE</a></li>
+          <li><a href="./index.html">CONTACTÁNOS</a></li>
           <hr class="separator-mobile__menu">
           <li class="login-menu__mobile"><a href="./login.html">ACCEDER</a></li>
           <li class="register-menu__mobile"><a id="registerButtonPost" href="./register.html">REGISTRARSE</a></li>
@@ -98,7 +98,7 @@
     </div>
     <header>
       <div class="decorator-header">
-        <p>CALLE AGUA 844, HUANCAYO | +51 967 523 180</p>
+        <p>PREVENT NATURE | +51 927 017 135</p>
       </div>
       <nav class="navegator">
         <ul class="flex-center">
@@ -127,10 +127,10 @@
             <div class="container-desktop">
               <ul class="container-desktop-ul">
                 <li><a href="./index.html">INICIO</a></li>
-                <li><a href="#productos">PRODUCTOS</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#acerca">ACERCA DE</a></li>
-                <li><a href="#contactanos">CONTACTÁNOS</a></li>
+                <li><a href="./index.html">PRODUCTOS</a></li>
+                <li><a href="./blogpage.html">BLOG</a></li>
+                <li><a href="./index.html">ACERCA DE</a></li>
+                <li><a href="./index.html">CONTACTÁNOS</a></li>
               </ul>
             </div>
           </div>
@@ -172,26 +172,30 @@
       <section class="center-all-tobuy-content">
         <div class="center-all-tobuy-content__grid">
           <div class="tobuy-content__grid_one">
-            <img src="../assets/greenpild.png" alt="product">
+            <img id="imgBuyShow" src="../assets/greenpild.png" alt="product">
           </div>
           <div class="tobuy-content__grid_two">
             <div class="tobuy-content__grid_two__description">
-              <h1>
+              <h1 id="titleProductBuy">
                 Capulas de moringa/100 capsulas por botella
               </h1>
-              <span>
+              <span >
                 S/ 200.00
               </span>
-              <p>
+              <p id="descriptionProductBuy">
                 Las capsulas de semillas de moringa biolife traen consigo un gran concentrado de energía natural. Nos ayuda a combatir y prevenir más de 300 enfermedades consumirlo aporta a nuestro organismo vitaminas, minerales, antioxidantes y todos los aminoácidos esenciales que necesita.
               </p>
+              <b class="price-desktop-just" id="priceProductBuy">
+                S/ 200.00
+              </b>
             </div>
+
             <div class="tobuy-content__grid_two__buttons">
               <!-- Re used component -->             
                <div class="tobuy-content__grid_two__buttons_whatsapp">
-                <button>
+                <a id="whatsAppButtonBuy">
                   Consultar producto por WhatsApp
-                </button>
+                </a>
               </div>
               <div class="tobuy-content__grid_two__buttons__container">
                 
@@ -200,7 +204,7 @@
                   <span id="countProductModal">0</span>
                   <button id="incrementProduct">+</button>
                 </div>
-                <button class="tobuy-content__grid_two__buttons__container__buy">Comprar ahora <img src="../assets/icon-paypal.svg" alt="paypal" ></button>
+                <button class="tobuy-content__grid_two__buttons__container__buy" id="paypalButtonBuy">Comprar ahora <img src="../assets/icon-paypal.svg" alt="paypal" ></button>
               </div>
 
             </div>
@@ -214,7 +218,7 @@
       <div class="all-content-center__footer">
         <div class="all-content-center__footer-media">
           <li>
-            <a href="">
+            <a href="https://es-la.facebook.com/">
               <svg
                 width="25"
                 height="25"
@@ -230,7 +234,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://twitter.com">
               <svg
                 width="25"
                 height="21"
@@ -246,7 +250,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://www.instagram.com">
               <svg
                 width="22"
                 height="22"
@@ -267,6 +271,6 @@
     </footer>
     <!-- COMPONENTS TWO -->
 
-    <script src="../src/login.js" type="module"></script>
+    <script src="../src/BuyIndex.js" type="module"></script>
   </body>
 </html>

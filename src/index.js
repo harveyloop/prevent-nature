@@ -2,8 +2,12 @@ import actionLike from "./actionLike.js";
 import countProduct from "./countProduct.js";
 import getProducts from "./getProducts.js";
 import infoModalProduct from "./infoModalProduct.js";
+import loadBlogIndex from "./loadBlogIndex.js";
 import localStorageGet from "./localStorageGet.js";
 import menuMobile from "./menuMobile.js";
+import { scrollProduct } from "./scrollProduct.js";
+import toBuy from "./toBuy.js";
+import toBuyLoad from "./toBuyLoad.js";
 import wishList from "./wishList.js";
 
 const d = document;
@@ -31,6 +35,10 @@ const $erroWishList = d.getElementById("erroWishList");
 const $incrementProduct = d.getElementById("incrementProduct");
 const $decrementProduct = d.getElementById("decrementProduct");
 const $countProductModal = d.getElementById("countProductModal");
+// scrollProduct
+const $inputSearchProduct = d.getElementById("searchProduct");
+// loadBlogIndex
+const $blogIndex = d.getElementById("blogIndex");
 
 getProducts($productsContainer);
 actionLike();
@@ -52,5 +60,9 @@ wishList(
   $fatherModalWish,
   $erroWishList
 );
+scrollProduct();
 countProduct($incrementProduct, $decrementProduct, $countProductModal);
 localStorageGet();
+toBuy();
+toBuyLoad();
+loadBlogIndex($blogIndex);

@@ -16,7 +16,7 @@
 .tobuy-content__grid_one img {
   width: 100%;
   max-width: 400px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .tobuy-content__grid_two__description h1 {
   font-size: 1.5rem;
@@ -90,15 +90,28 @@
   text-align: center;
   margin: 3rem 0;
 }
-.tobuy-content__grid_two__buttons_whatsapp button {
+.tobuy-content__grid_two__buttons_whatsapp a {
   width: 100%;
   border: none;
   padding: 0.7rem;
   border-radius: 0.5rem;
   background-color: #8b8b8b21;
   color: var(--gray);
+  display: block;
+}
+.price-desktop-just {
+  display: none;
 }
 @media (min-width: 900px) {
+  .tobuy-content__grid_two__buttons {
+    grid-template-areas: "one" "two";
+  }
+  .tobuy-content__grid_two__buttons__container {
+    grid-area: two;
+  }
+  .tobuy-content__grid_two__buttons_whatsapp {
+    grid-area: one;
+  }
   .center-all-tobuy-content__grid {
     grid-template-columns: 50% 50%;
   }
@@ -115,5 +128,15 @@
   .tobuy-content__grid_two__buttons__container {
     justify-content: start;
     gap: 2rem;
+  }
+  .tobuy-content__grid_two__description span {
+    display: none;
+  }
+  .price-desktop-just {
+    font-size: 1.3rem;
+    color: var(--green-dark);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: block;
   }
 }

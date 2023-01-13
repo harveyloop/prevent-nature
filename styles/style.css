@@ -25,3 +25,11 @@
 /* toBuy */
 
 @import url("./toBuy.css");
+/* blog pages */
+
+@import url("./blog-style.css");
+/* blog select */
+
+@import url("./blog-select.css");
+/* still work */
+@import url("./still-work.css");

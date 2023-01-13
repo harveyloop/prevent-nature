@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1",
+    "name-blog": "Beneficios de consumir moringa",
+    "content-blog": "Moringa oleífera, es un árbol que pertenece a la familia Moringaceae, actualmente se cultiva en todas las regiones tropicales, subtropicales y semiáridas del mundo. Moringa oleífera ha sido utilizada por el hombre desde muchos años. Ya que las hojas de eta presentan un elevado contenido de vitaminas, provitaminas y minerales, Así mismo contienen casi todos los aminoácidos esenciales para la vida, incluyendo algunos como la arginina (mejora el flujo sanguíneo), y la histidina(elimina exceso de metales pesados). Que se encuentran generalmente en la proteína de origen animal. Moringa contiene estos compuestos saludables: vitamina B1, vitamina A, B2, B3, folato vitamina C, calcio, potasio, hierro, magnesio, fósforo, zinc. Entre sus beneficios: ",
+    "content-second-blog": "Moringa tiene muchos beneficios, pero si se toma en altas dosis, o no se da un buen uso, puede dar algunos efectos secundarios.",
+    "list-blog": [
+      "Moringa tiene grasas, proteínas, vitaminas, minerales necesarios para un desarrollo adecuado.",
+      "Puede regular la presión arterial, gracias sus componentes de polifenoles y flavonoides.",
+      "Moringa tiene una gran cantidad de hierro, lo que puede prevenir la anemia.",
+      "Es útil para regular la glucosa, además tiene efectos antibióticos."
+    ],
+    "principal_image": "/assets/moringa-blog.jpg",
+    "second_image": "",
+    "time": "15 de noviembre del 2022",
+    "show": 0
+  },
+  {
+    "id": "2",
+    "name-blog": "Recetas – Tomates rellenos con carne y moringa",
+    "content-blog": "El tomate era originario del oeste de América del Sur y América Central. Primero fue domesticado por los indígenas de México, quienes llenaron los tomates con una variedad de ingredientes, incluidos frijoles, carne y granos. Este plato, llamado tomate relleno con varios ingredientes, eventualmente se conoció como chiles rellenos o chiles rellenos.Los ingredientes para preparar tomates rellenos con moringa son:",
+    "content-second-blog": "Para la preparación, cortamos finamente la cebolla, el chile verde, el ajo y la moringa. En una cazuela a fuego medio colocamos con un poco de aceite y, cuando esté caliente, coloca los vegetales junto a la carne, el consomé y una pizca de sal. Sofríe hasta que la carne esté bien cocina y retira del fuego. Lavamos los tomates y cortamos la parte de los extremos. En uno de ellos, abre y saca toda la pulpa. Rellenamos con la carne.",
+    "list-blog": [
+      "8 tomates medianos",
+      "4 onzas de carne molida",
+      "1/2 Chile verde pequeño",
+      "1/2 Cebolla mediana",
+      "1 cucharada de consomé de res",
+      "2 cucharadas de aceite",
+      "Cucharadas de moringa en polvo o 1 taza de moringa fresca",
+      "Sal al gusto",
+      "1 diente de ajo"
+    ],
+    "principal_image": "/assets/receta-blog.jpg",
+    "second_image": "",
+    "time": "2 de enero del 2023",
+    "show": 0
+  },
+  {
+    "id": "3",
+    "name-blog": "Moringa para deportistas",
+    "content-blog": "Moringa, puede ser usada como suplemento si eres un deportista ya sea nivel profesional o para aficionados, de hecho es muy recomendable, ya que podemos disfrutar de sus múltiples aportes nutricionales para nuestro organismo. Moringa, puede ser usado como bebida energizante natural, puedes preparar solo con moringa o también puedes usar un producto de BioLife “Café con moringa endulzado con stevia”, el hecho es que consumir moringa puede beneficiar para tener mejores entrenamientos y mejores resultados, por la energía y vitalidad que esta nos da. Por otro lado, si eres alguien que le gusta cocinar, puedes usar moringa en polvo ya que contiene aminoácidos esenciales que ayuda a la construcción de masa muscular, y también tiene un alto contenido proteico. Esto puede ayudara la recuperación de los entrenamientos, además gracias al contenido alto en hierro podemos mejorar la resistencia.",
+    "content-second-blog": "",
+    "list-blog": [],
+    "principal_image": "/assets/people-blog.jpg",
+    "second_image": "",
+    "time": "5 de enero del 2023",
+    "show": 0
+  },
+  {
+    "id": "4",
+    "name-blog": "Obtener el máximo beneficio de la moringa",
+    "content-blog": "La moringa, contiene sustancias anticancerígenas, hipotensoras, hipoglucemiantes y antibióticas, en general parece tener muchos beneficios, pero si queremos obtener los máximos beneficios, es clave no someter sus hojas a temperaturas mayores de 40 grados Celsius. Según estudios, se revelo que consumir moringa en una infusión en frío, es la mejor opción, ya que preserva los isotiocianatos que contiene la moringa. La sustancia llamada isotiocianato, favorece la detoxificación del cuerpo. Asimismo, incrementar los niveles de enzima de detoxificación de fase dos, lo que tiene un efecto benéfico para defender el cuerpo de sustancias nocivas que ingerimos todos los días.",
+    "content-second-blog": "",
+    "list-blog": [],
+    "principal_image": "/assets/sick-blog.jpg",
+    "second_image": "",
+    "time": "8 de enero del 2023",
+    "show": 0
+  }
+]
