@@ -1,21 +1,12 @@
 [
   {
-    "id": 1,
-    "name": "Café con moringa endulzado con STEVIA",
-    "description": "El café AMAGI aporta más de 90 fitonutrientes esenciales entre; vitaminas, proteínas, carbohidratos, minerales, aminoácidos, grasas esenciales, fibra; 46 antioxidantes, 36 anti-inflamatorios, 300 enzimas, clorofila, oligoelementos, omega 3,6 y 0, ZEATINA (fitohormona de rejuvenecimiento). Además, el café esta endulzado con STEVIA, una planta que es 300 veces más dulce que el azúcar, y no tiene calorías.",
-    "like": false,
-    "price": 85.0,
-    "img": "../assets/coffee.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
-  },
-  {
     "id": 2,
     "name": "Capsulas de semilla de moringa",
     "description": "Las capsulas de semillas de moringa biolife traen consigo un gran concentrado de energía natural. Nos ayuda a combatir y prevenir más de 300 enfermedades consumirlo aporta a nuestro organismo vitaminas, minerales, antioxidantes y todos los aminoácidos esenciales que necesita.",
     "like": false,
     "price": 130.0,
     "img": "../assets/greenpild.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20capsulas%20de%20semilla%20de%20moringa."
   },
   {
     "id": 3,
@@ -24,7 +15,7 @@
     "like": false,
     "price": 149.99,
     "img": "../assets/detox.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": " https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20EFICLAX."
   },
   {
     "id": 4,
@@ -33,7 +24,7 @@
     "like": false,
     "price": 150.0,
     "img": "../assets/althus.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20ALTHUS,"
   },
   {
     "id": 5,
@@ -42,7 +33,7 @@
     "like": false,
     "price": 139.99,
     "img": "../assets/revella.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20Revella."
   },
   {
     "id": 6,
@@ -51,7 +42,7 @@
     "like": false,
     "price": 159.99,
     "img": "../assets/coffeeBlack.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20Café%20con%20moringa."
   },
   {
     "id": 7,
@@ -60,7 +51,7 @@
     "like": false,
     "price": 0.99,
     "img": "../assets/eternal.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20Eternal."
   },
   {
     "id": 8,
@@ -69,7 +60,7 @@
     "like": false,
     "price": 159.99,
     "img": "../assets/ori.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20Cápsulas%20blandas%20de%20aceite%20de%20moringa."
   },
   {
     "id": 9,
@@ -78,7 +69,7 @@
     "like": false,
     "price": 160.0,
     "img": "../assets/newCoffee.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20Cappuccino%20con%20moringa."
   },
   {
     "id": 10,
@@ -87,7 +78,7 @@
     "like": false,
     "price": 0.99,
     "img": "../assets/waterPre.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20ZENIT."
   },
   {
     "id": 11,
@@ -96,7 +87,7 @@
     "like": false,
     "price": 0.99,
     "img": "../assets/shampoo.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20NUTRO."
   },
   {
     "id": 12,
@@ -105,6 +96,6 @@
     "like": false,
     "price": 120.0,
     "img": "../assets/exol.png",
-    "messageWhats": "https://wa.me/927017135/?text=Café%20con%20moringa%20tres%20en%20uno"
+    "messageWhats": "https://wa.me/927017135/?text=Hola%20Prevent%20Nature,%20necesito%20información%20sobre%20el%20producto%20XOL."
   }
 ]
